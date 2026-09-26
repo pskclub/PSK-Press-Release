@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ติดตั้งและอัปเดต · คู่มือ PSK Press</title>
+<meta name="description" content="ดาวน์โหลดตัวติดตั้งสำหรับ Windows ติดตั้ง เปิดใช้ครั้งแรก และให้แอปอัปเดตตัวเอง">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html" aria-current="page">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">เริ่มต้น</p>
+<h1>ติดตั้งและอัปเดต</h1>
+<p class="lead">ดาวน์โหลดตัวติดตั้งสำหรับ Windows ติดตั้ง เปิดใช้ครั้งแรก และให้แอปอัปเดตตัวเอง</p>
+<h2 id="h-1">สิ่งที่ต้องมี</h2>
+<ul>
+  <li><b>Windows 10 หรือ 11</b> (64 บิต)</li>
+  <li><b>Google Chrome</b> — สำหรับส่วนขยายที่ใช้ Gemini, ChatGPT, Google Flow และโพสต์โซเชียล</li>
+  <li>อินเทอร์เน็ต</li>
+  <li>บัญชี Google (สำหรับ Gemini และ Google Flow) หรือคีย์ API ของผู้ให้บริการ AI — เลือกได้ใน <a href="setup.html">ตั้งค่าครั้งแรก</a></li>
+</ul>
+<p>ไม่ต้องติดตั้งโปรแกรมอื่นเพิ่ม ตัวติดตั้งมีทุกอย่างมาให้แล้ว:</p>
+<ul>
+  <li><b>FFmpeg</b> — สำหรับต่อวิดีโอ</li>
+  <li><b>yt-dlp</b> — สำหรับดาวน์โหลดคลิปจากลิงก์</li>
+  <li><b>WebView2</b></li>
+  <li><b>ฟอนต์ไทย 12 แบบ</b> สำหรับซับ</li>
+  <li><b>ส่วนขยายเบราว์เซอร์ PSK Press Bridge</b></li>
+</ul>
+
+<h2 id="h-2">ดาวน์โหลดและติดตั้ง</h2>
+<ol class="steps">
+  <li>เปิดหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลดเวอร์ชันล่าสุด</a></li>
+  <li>ในหัวข้อ <b>Assets</b> กดไฟล์ที่ลงท้ายด้วย <code>_x64-setup.exe</code> (เช่น <code>PSK Press_0.3.0_x64-setup.exe</code>) — ไฟล์ <code>.msi</code> ก็ใช้ได้ แต่แนะนำ <code>setup.exe</code></li>
+  <li>เปิดไฟล์ที่ดาวน์โหลดมา ตัวติดตั้งจะติดตั้งให้เฉพาะบัญชี Windows ของคุณ ไม่ต้องใช้สิทธิ์ผู้ดูแลระบบ</li>
+  <li>เปิด <b>PSK Press</b> จากเมนู Start หรือไอคอนบนเดสก์ท็อป</li>
+</ol>
+
+<div class="note warn"><span class="t">Windows ขึ้นหน้าฟ้า “Windows ปกป้องพีซีของคุณ”</span>
+เกิดกับโปรแกรมที่ยังไม่มีใบรับรองผู้พัฒนาแบบเสียเงิน ถ้าคุณดาวน์โหลดจากหน้า Releases ข้างบน ให้กด <b>ข้อมูลเพิ่มเติม (More info)</b> → <b>เรียกใช้ต่อไป (Run anyway)</b></div>
+
+<h2 id="h-3">เปิดครั้งแรก</h2>
+<p>หน้าแรกของแอปคือ <b>ภาพรวม</b> ด้านขวามีกล่อง <b>ตั้งค่าให้พร้อมก่อนสร้าง</b> ซึ่งบอกว่ายังขาดอะไรตามผู้ให้บริการที่เลือกไว้ แต่ละข้อมีลิงก์ไปหน้าที่ต้องแก้ ทำให้ครบทุกข้อตามหัวข้อต่อไป:</p>
+<ol>
+  <li><a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a></li>
+  <li><a href="setup.html">ตั้งค่าครั้งแรก</a></li>
+</ol>
+<p>แถบล่างสุดของแอป (แถบสถานะ) บอกงานที่กำลังผลิต สถานะส่วนขยาย บัญชีที่ล็อกอิน และสถานะ FFmpeg ตลอดเวลา</p>
+
+<h2 id="h-4">อัปเดตแอป</h2>
+<p>แอปตรวจหาเวอร์ชันใหม่ให้เอง 8 วินาทีหลังเปิดแอป และทุก 6 ชั่วโมง ถ้ามี จะขึ้นการ์ด <b>มีเวอร์ชันใหม่ vX.Y.Z</b> ที่มุมซ้ายล่าง พร้อมรายการสิ่งที่เปลี่ยน:</p>
+<ul>
+  <li><span class="ui">อัปเดตตอนนี้</span> — ดาวน์โหลด (มีแถบ %) ติดตั้ง แล้วเปิดแอปใหม่ให้เอง</li>
+  <li><span class="ui">ไว้ทีหลัง</span> — ซ่อนการ์ดของเวอร์ชันนี้ แอปจะแจ้งอีกเมื่อมีเวอร์ชันถัดไป</li>
+</ul>
+<p>ถ้ามีงานกำลังผลิตอยู่ แอปจะถามก่อนว่า <b>กำลังทำอยู่ N งาน — อัปเดตเลยไหม?</b></p>
+<ul>
+  <li>อัปเดตทันที: งานที่ค้างจะเริ่มขั้นตอนนั้นใหม่หลังเปิดแอป ภาพและคลิปที่ทำเสร็จแล้วยังเก็บไว้</li>
+  <li>กด <span class="ui">รอให้เสร็จก่อน</span> ถ้าไม่อยากให้งานสะดุด</li>
+</ul>
+<p>ตรวจเองได้ทุกเมื่อที่ <span class="path">ตั้งค่า → เกี่ยวกับ</span> → <span class="ui">ตรวจหาอัปเดต</span> ในหน้าเดียวกันจะเห็นเลขเวอร์ชันที่ใช้อยู่</p>
+<figure><a class="shot" href="img/settings-about.png"><img src="img/settings-about.png" alt="ตั้งค่า → เกี่ยวกับ: เลขเวอร์ชันและปุ่มตรวจหาอัปเดต" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → เกี่ยวกับ: เลขเวอร์ชันและปุ่มตรวจหาอัปเดต</figcaption></figure>
+<div class="note info"><span class="t">อัปเดตปลอดภัยไหม</span>ไฟล์อัปเดตทุกไฟล์มีลายเซ็นดิจิทัล แอปจะติดตั้งเฉพาะไฟล์ที่เซ็นด้วยกุญแจของผู้พัฒนาเท่านั้น</div>
+
+<h3 id="h-5">หลังอัปเดตแล้ว ให้รีโหลดส่วนขยายด้วย</h3>
+<p>ส่วนขยายใน Chrome โหลดจากโฟลเดอร์ของแอป เมื่อแอปอัปเดต ไฟล์ส่วนขยายในโฟลเดอร์ก็เปลี่ยนไปด้วย ให้เปิด <code>chrome://extensions</code> แล้วกดปุ่มรีโหลด (↻) ที่การ์ด <b>PSK Press Bridge</b> ครั้งเดียว</p>
+
+<h2 id="h-6">ข้อมูลของคุณเก็บที่ไหน</h2>
+<div class="table"><table>
+<tr><th>อะไร</th><th>ที่เก็บ</th></tr>
+<tr><td>วิดีโอที่เสร็จแล้ว</td><td>โฟลเดอร์ <code>Videos\PSK Press\วันที่\ชื่องาน</code> (เปลี่ยนได้ที่ <span class="path">ตั้งค่า → โฟลเดอร์และเครื่องมือ</span>) — แต่ละงานมีภาพฉาก คลิป เสียง และไฟล์บันทึก <code>log.jsonl</code></td></tr>
+<tr><td>คีย์ API</td><td>ตัวจัดการข้อมูลรับรองของ Windows (Credential Manager) ไม่ได้เขียนลงไฟล์</td></tr>
+<tr><td>การตั้งค่า คิวงาน สินค้า ตัวละคร</td><td><code>%APPDATA%\com.psk.press</code></td></tr>
+</table></div>
+<p>ถอนการติดตั้ง: <span class="path">การตั้งค่า Windows → แอป → PSK Press → ถอนการติดตั้ง</span> วิดีโอในโฟลเดอร์ผลงานจะไม่ถูกลบ</p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="index.html"><small>← ก่อนหน้า</small>หน้าแรก</a><a class="next" href="connect.html"><small>ถัดไป →</small>เชื่อมเบราว์เซอร์และบัญชี</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เชื่อมเบราว์เซอร์และบัญชี · คู่มือ PSK Press</title>
+<meta name="description" content="ติดตั้งส่วนขยาย PSK Press Bridge ใน Chrome จับคู่กับแอป แล้วล็อกอินเว็บที่ต้องใช้ — ทำครั้งเดียวใช้ได้ตลอด">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html" aria-current="page">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">เริ่มต้น</p>
+<h1>เชื่อมเบราว์เซอร์และบัญชี</h1>
+<p class="lead">ติดตั้งส่วนขยาย PSK Press Bridge ใน Chrome จับคู่กับแอป แล้วล็อกอินเว็บที่ต้องใช้ — ทำครั้งเดียวใช้ได้ตลอด</p>
+<p>ส่วนขยาย <b>PSK Press Bridge</b> ให้แอปสั่งงานในเบราว์เซอร์ Chrome ของคุณ:</p>
+<ul>
+  <li>ใช้ Gemini / ChatGPT เขียนบทและวาดภาพ</li>
+  <li>ใช้ Google Flow ทำคลิปวิดีโอ</li>
+  <li>โพสต์ลง TikTok / YouTube / Facebook</li>
+  <li>ดึงข้อมูลสินค้าจาก Shopee</li>
+</ul>
+<p>ส่วนขยายใช้บัญชีที่คุณล็อกอินไว้แล้วใน Chrome แอปไม่เคยเห็นหรือเก็บรหัสผ่านของคุณ</p>
+<figure><a class="shot tall" href="img/connections.png"><img src="img/connections.png" alt="หน้า เชื่อมต่อ: 3 ขั้นตอนเชื่อมส่วนขยาย และรายการโปรไฟล์ Chrome ที่เชื่อมอยู่" loading="lazy" width="1440"></a><figcaption>หน้า <b>เชื่อมต่อ</b>: 3 ขั้นตอนเชื่อมส่วนขยาย และรายการโปรไฟล์ Chrome ที่เชื่อมอยู่</figcaption></figure>
+
+<h2 id="h-1">ขั้นที่ 1 — ติดตั้งส่วนขยาย</h2>
+<ol class="steps">
+  <li>ในแอป เปิดเมนู <b>เชื่อมต่อ</b> ขั้นที่ 1 <b>ติดตั้งส่วนขยาย</b> จะแสดงที่อยู่โฟลเดอร์ส่วนขยาย กด <span class="ui">คัดลอก</span></li>
+  <li>ใน Chrome เปิด <code>chrome://extensions</code> (พิมพ์ในช่องที่อยู่)</li>
+  <li>เปิดสวิตช์ <b>โหมดนักพัฒนาซอฟต์แวร์ (Developer mode)</b> มุมขวาบน</li>
+  <li>กด <b>โหลดส่วนขยายที่คลายการแพ็กแล้ว (Load unpacked)</b> แล้ววางที่อยู่โฟลเดอร์ที่คัดลอกไว้ (หรือกด <span class="ui">เปิด</span> ในแอปเพื่อเปิดโฟลเดอร์นั้น)</li>
+  <li>จะเห็นการ์ด <b>PSK Press Bridge</b> — กดไอคอนจิ๊กซอว์บนแถบเครื่องมือแล้วปักหมุดไอคอนไว้ เพื่อให้กดง่าย</li>
+</ol>
+
+<h2 id="h-2">ขั้นที่ 2 — กดเชื่อมต่อ แล้วอนุญาตในแอป</h2>
+<ol class="steps">
+  <li>เปิดแอป PSK Press ไว้</li>
+  <li>ใน Chrome กดไอคอน <b>PSK Press Bridge</b> → <span class="ui">เชื่อมต่อ</span></li>
+  <li>แอปจะเด้งหน้าต่าง <b>เบราว์เซอร์ขอเชื่อมต่อกับ PSK Press</b> พร้อมชื่อโปรไฟล์ Chrome — ตรวจว่าเป็นเครื่องของคุณ แล้วกด <span class="ui">อนุญาต</span></li>
+  <li>ป้ายในหน้าเชื่อมต่อเปลี่ยนเป็น <b>เชื่อมต่อแล้ว</b> และแถบสถานะด้านล่างของแอปจะไม่ขึ้น “ส่วนขยายไม่ได้เชื่อมต่อ” อีก</li>
+</ol>
+<p>จับคู่ครั้งเดียวใช้ได้ตลอด ครั้งต่อไปที่เปิด Chrome และแอป ส่วนขยายจะเชื่อมต่อเอง</p>
+<div class="note tip"><span class="t">เชื่อมต่อไม่ได้?</span>
+ในขั้นที่ 2 กด <span class="ui">เชื่อมต่อไม่ได้? ใช้รหัสจับคู่แทน</span> แล้ว <span class="ui">คัดลอกรหัส</span> ไปวางในป๊อปอัปของส่วนขยาย ปุ่มรีเฟรชข้างรหัสจะออกรหัสใหม่ เบราว์เซอร์ที่เคยจับคู่ไว้ต้องจับคู่ใหม่</div>
+
+<h2 id="h-3">ขั้นที่ 3 — ล็อกอินบัญชีในเบราว์เซอร์นั้น</h2>
+<p>ใน Chrome โปรไฟล์ที่เชื่อมไว้ ล็อกอินเว็บที่คุณจะใช้:</p>
+<div class="table"><table>
+<tr><th>เว็บ</th><th>ใช้ทำอะไร</th></tr>
+<tr><td>Gemini (gemini.google.com)</td><td>เขียนบทและวาดภาพ โดยไม่ต้องใช้คีย์ API</td></tr>
+<tr><td>ChatGPT (chatgpt.com)</td><td>เขียนบทและวาดภาพ ใช้แทน Gemini ได้</td></tr>
+<tr><td>Google Flow (labs.google/flow)</td><td>ทำคลิปวิดีโอ AI (ใช้เครดิต Flow ของบัญชีคุณ)</td></tr>
+<tr><td>TikTok, YouTube Studio, Facebook</td><td>โพสต์คลิป</td></tr>
+<tr><td>Shopee Affiliate</td><td>แปลงลิงก์สินค้าเป็นลิงก์ Affiliate</td></tr>
+</table></div>
+<p>จากนั้นเลื่อนลงไปแผง <b>บัญชีโซเชียล</b> ในหน้าเชื่อมต่อ แล้วกด <span class="ui">ตรวจบัญชีอีกครั้ง</span> แต่ละเว็บจะขึ้นสถานะ:</p>
+<ul>
+  <li><b>ล็อกอินอยู่</b> (สีเขียว) พร้อมชื่อบัญชี</li>
+  <li><b>ยังไม่ล็อกอิน</b> — กดไอคอนเปิดหน้าล็อกอิน</li>
+  <li><b>ยังไม่ได้ตรวจ</b></li>
+</ul>
+<p>ปุ่ม <span class="ui">ตรวจ</span> ในแต่ละแถวใช้ตรวจทีละเว็บ ถ้าขึ้นว่า <b>ยังไม่เห็นชื่อบัญชี</b> ให้เปิดเว็บนั้นไว้สักแท็บ แล้วกดตรวจอีกครั้ง</p>
+
+<h2 id="h-4">ใช้หลายโปรไฟล์ Chrome</h2>
+<p>ถ้าแยกบัญชี เช่น บัญชีส่วนตัวกับบัญชีร้าน ให้ติดตั้งและจับคู่ส่วนขยายในแต่ละโปรไฟล์ แต่ละโปรไฟล์จะขึ้นในแผง <b>เบราว์เซอร์ที่เชื่อมต่อ</b> แต่ละแถวมี:</p>
+<ul>
+  <li>ชื่อ — กด <span class="ui">เปลี่ยนชื่อ</span> เพื่อตั้งชื่อที่จำง่าย</li>
+  <li>อีเมลและเวอร์ชันส่วนขยาย</li>
+  <li><b>โฟลเดอร์โปรไฟล์ Chrome</b> — ให้แอปเปิดโปรไฟล์นั้นได้ถูกตัว</li>
+  <li><span class="ui">เปิด Chrome โปรไฟล์นี้</span> และ <span class="ui">ลืม</span> เมื่อโปรไฟล์ออฟไลน์</li>
+</ul>
+<p>ตั้งค่าด้านล่างแผงนั้น:</p>
+<ul>
+  <li><b>เปิด Chrome ให้อัตโนมัติเมื่องานต้องใช้</b> — ถ้าโปรไฟล์ที่ต้องใช้ยังไม่เปิด แอปจะเปิด Chrome โปรไฟล์นั้น แล้วรอส่วนขยายเชื่อมต่อได้นานสุด 45 วินาที</li>
+  <li><b>ที่อยู่ Chrome (ไม่บังคับ)</b> — เว้นว่างไว้ แอปจะหา Chrome ที่ติดตั้งไว้ตามปกติเอง</li>
+  <li><b>โปรไฟล์หลัก</b> — ใช้กับเว็บที่ตั้งเป็น “อัตโนมัติ”</li>
+  <li><b>ใช้โปรไฟล์ไหนกับเว็บไหน</b> — เลือกโปรไฟล์ให้ TikTok, YouTube, Facebook, Shopee, Google Flow, Gemini, ChatGPT แยกกันได้ เช่น โพสต์ TikTok ด้วยบัญชีร้าน แต่ใช้ Gemini จากบัญชีส่วนตัว</li>
+</ul>
+<div class="note info">แอปจะไม่สลับไปใช้โปรไฟล์อื่นเองเมื่อโควตาของบัญชีหนึ่งหมด งานจะหยุดและบอกให้คุณจัดการ</div>
+
+<h2 id="h-5">ลิงก์ Shopee Affiliate</h2>
+<p>แผง <b>ลิงก์ Shopee Affiliate</b> แปลงลิงก์สินค้า Shopee เป็นลิงก์ Affiliate ของบัญชีคุณ:</p>
+<ol>
+  <li>วางลิงก์ บรรทัดละ 1 ลิงก์</li>
+  <li>ใส่ <b>Sub ID</b> ถ้าต้องการ</li>
+  <li>กด <span class="ui">แปลงลิงก์</span> แล้ว <span class="ui">คัดลอกทั้งหมด</span></li>
+</ol>
+<p>ต้องล็อกอิน Shopee Affiliate ใน Chrome ก่อน ในหน้า <a href="products.html">สินค้า</a> ก็มีปุ่ม <span class="ui">แปลงเป็น Affiliate</span> ทีละสินค้าด้วย</p>
+
+<h2 id="h-6">แจ้งเตือนทาง Telegram</h2>
+<p>ให้บอท Telegram ของคุณเองส่งข้อความเมื่องานเสร็จหรือล้มเหลว:</p>
+<ol class="steps">
+  <li>คุยกับ <b>@BotFather</b> ใน Telegram เพื่อสร้างบอท แล้วคัดลอก token</li>
+  <li>วางในช่อง <b>Bot token</b> → <span class="ui">บันทึก</span></li>
+  <li>ส่งข้อความหาบอทของคุณ 1 ครั้ง แล้วกด <span class="ui">ค้นหาแชต</span> และเลือกแชตที่จะรับแจ้งเตือน</li>
+  <li>เปิดสวิตช์ <b>เมื่องานเสร็จ</b> / <b>เมื่องานล้มเหลว</b> / <b>แนบวิดีโอ (≤ 48 MB)</b> ตามต้องการ แล้วกด <span class="ui">ส่งข้อความทดสอบ</span></li>
+</ol>
+<p>นอกจาก Telegram แอปยังเด้ง <b>แจ้งเตือนบนเดสก์ท็อป</b> เมื่องานเสร็จ ล้มเหลว รอตรวจฉาก หรือรอให้คุณทำบางอย่างใน Chrome (เฉพาะตอนที่หน้าต่างแอปไม่ได้อยู่ด้านหน้า) — ปิดได้ที่ <span class="path">ตั้งค่า → คิวและการโพสต์</span></p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="install.html"><small>← ก่อนหน้า</small>ติดตั้งและอัปเดต</a><a class="next" href="setup.html"><small>ถัดไป →</small>ตั้งค่าครั้งแรก</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>พรอมต์ระบบ · คู่มือ PSK Press</title>
+<meta name="description" content="แก้คำสั่งทุกข้อที่แอปส่งให้ AI ได้เอง — บทบาทของ AI กฎการเขียนบท การวาดแผ่นสตอรี่บอร์ด การทำคลิป และวิธีพูดถึงคนในภาพ">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html" aria-current="page">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">ระบบ</p>
+<h1>พรอมต์ระบบ</h1>
+<p class="lead">แก้คำสั่งทุกข้อที่แอปส่งให้ AI ได้เอง — บทบาทของ AI กฎการเขียนบท การวาดแผ่นสตอรี่บอร์ด การทำคลิป และวิธีพูดถึงคนในภาพ</p>
+<p>ที่ <span class="path">ตั้งค่า → พรอมต์ระบบ</span> มีคำสั่ง 40 ข้อ ครอบคลุมทุกจุดที่แอปคุยกับ AI แบ่งเป็น 6 กลุ่ม ค่าเริ่มต้นเป็นคำสั่งที่ทดสอบกับงานจริงแล้ว ถ้าไม่แก้อะไร แอปจะทำงานเหมือนเดิม</p>
+<figure><a class="shot" href="img/settings-prompts.png"><img src="img/settings-prompts.png" alt="ตั้งค่า → พรอมต์ระบบ" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → พรอมต์ระบบ</figcaption></figure>
+
+<h2 id="h-1">กลุ่มของพรอมต์</h2>
+<div class="table"><table>
+<tr><th>กลุ่ม</th><th>ตัวอย่าง</th></tr>
+<tr><td><b>วางบท (Planning)</b></td><td>บทบาท AI ของงานเรื่องเล่า คลิปสินค้า ข่าว พอดแคสต์ รีมิกซ์ · กติกาเปิด-ปิดคลิป · วิธีแทรกสินค้า 4 แบบ</td></tr>
+<tr><td><b>แผ่นสตอรี่บอร์ด (Storyboard sheet)</b></td><td>บทบาทผู้วางแผ่น · กติกาความยาวบทต่อแผ่น · ประโยคปิดการขาย · การขอให้ย่อบท · การวาดแผ่น · คำสั่งทำคลิปจากแผ่น</td></tr>
+<tr><td><b>คลิปวิดีโอ (Video clips)</b></td><td>การพูดถึงพรีเซนเตอร์แบบ “คล้าย” · ข้อความเพิ่มตอนลองใหม่หลังถูกปฏิเสธ · การเคลื่อนไหวเริ่มต้น · บทพูดและเสียงในคลิป</td></tr>
+<tr><td><b>รูปภาพ (Images)</b></td><td>คนในภาพ (มี/ไม่มีรูปนายแบบ) · ชุดภาพโฆษณา · ภาพปก · แผ่นตัวละคร · ภาพพอดแคสต์</td></tr>
+<tr><td><b>กฎร่วม (Shared rules)</b></td><td>กฎการเขียนคำบรรยายภาพ (ห้ามใส่ชื่อตัวละคร) · กฎแผ่นสตอรี่บอร์ด (ห้ามโลโก้แพลตฟอร์มและไอคอน)</td></tr>
+<tr><td><b>อื่น ๆ (Other)</b></td><td>เขียนแคปชัน · ตรวจคำผิดในซับ · คิดไอเดีย · อ่านลักษณะคนจากรูป</td></tr>
+</table></div>
+
+<h2 id="h-2">แก้พรอมต์</h2>
+<ol class="steps">
+  <li>พิมพ์ในช่องค้นหา เช่น “คลิป” “แผ่น” “ปก” หรือเลื่อนหาในกลุ่ม แล้วกดชื่อพรอมต์เพื่อเปิด</li>
+  <li>ใต้ชื่อบอกว่าพรอมต์นี้ใช้ตอนไหน แก้ข้อความในกล่องได้เลย</li>
+  <li>พรอมต์ที่แก้แล้วจะมีป้าย <b>แก้แล้ว</b> ด้านบนนับว่าแก้ไปกี่รายการ</li>
+  <li>กด <span class="ui">บันทึก</span> มุมขวาบน มีผลกับงานที่เริ่มหลังจากนี้</li>
+</ol>
+
+<h3 id="h-3">ค่าในวงเล็บปีกกา</h3>
+<p>คำอย่าง <code>{lang}</code> <code>{per}</code> <code>{seconds}</code> คือค่าที่แอปเติมให้ตอนส่งจริง ใต้กล่องมีรายการ “ค่าที่แอปใส่ให้” ของพรอมต์นั้น เช่น:</p>
+<ul>
+  <li><code>{lang}</code> — ภาษาของงาน เช่น Thai</li>
+  <li><code>{per}</code> — จำนวนช็อตต่อแผ่น</li>
+  <li><code>{seconds}</code> — ความยาวคลิป (วินาที)</li>
+  <li><code>{lo}</code>–<code>{hi}</code> — จำนวนตัวอักษรต่ำสุด–สูงสุดของบทต่อแผ่น</li>
+  <li><code>{line}</code> — บทพูด หรือประโยคปิดการขาย</li>
+  <li><code>{voice}</code> — ลักษณะเสียงผู้พูด</li>
+  <li><code>{style}</code> — สไตล์ภาพ</li>
+</ul>
+<p>ถ้าลบค่าไหนออก แอปจะเตือนว่า “ไม่มี {…} ในข้อความ — แอปจะไม่ใส่ค่านี้ให้ AI”</p>
+
+<h3 id="h-4">คืนค่าเริ่มต้น</h3>
+<ul>
+  <li><span class="ui">คืนค่าเริ่มต้น</span> ใต้แต่ละพรอมต์ — คืนเฉพาะข้อนั้น</li>
+  <li>ลบข้อความจนว่าง — ใช้ค่าเริ่มต้นเหมือนกัน</li>
+  <li><span class="ui">คืนค่าเริ่มต้นทั้งหมด</span> ด้านบน — คืนทุกข้อ (มีถามยืนยัน)</li>
+</ul>
+
+<h2 id="h-5">ส่วนที่แก้ไม่ได้ (ตั้งใจล็อกไว้)</h2>
+<ul>
+  <li><b>รูปแบบคำตอบ JSON</b> — แอปต้องอ่านคำตอบของ AI เป็นโครงสร้างที่แน่นอน (บท ฉาก ชื่อเรื่อง แคปชัน) ถ้าแก้ได้ งานจะพัง</li>
+  <li><b>ข้อมูลของงาน</b> — ชื่อสินค้า รายละเอียด บรีฟ บทพูด หัวข้อ แอปต่อท้ายพรอมต์ให้เอง ส่วนที่อยากกำหนดต่องาน ใช้ช่อง “คำสั่งเพิ่มเติมถึง AI” หรือ “บรีฟการเล่าเรื่อง” ในหน้าสร้างงาน</li>
+</ul>
+
+<h2 id="h-6">ตัวอย่างการปรับที่ได้ผล</h2>
+<ul>
+  <li><b>ให้คลิปขายของพูดแบบเพื่อนเล่า</b> — แก้ “บทบาท AI: คลิปสินค้า” หรือ “บทบาท AI: วางแผ่นสตอรี่บอร์ด” เพิ่มว่า <i>speak like a close friend recommending, casual Thai, no formal selling words</i></li>
+  <li><b>ห้ามภาพบางอย่างทุกงาน</b> — เพิ่มใน “กฎการเขียนคำบรรยายภาพ” เช่น <i>No alcohol, no cigarettes</i></li>
+  <li><b>Flow ปฏิเสธบ่อย</b> — ปรับ “ต่อท้ายเมื่อลองใหม่หลังถูกปฏิเสธ” หรือ “คนในคลิป: มีรูปพรีเซนเตอร์” ให้บรรยายกว้างขึ้น</li>
+  <li><b>แคปชันสไตล์ร้าน</b> — แก้ “บทบาท AI: แคปชัน” เช่น <i>You write social-media post copy in {lang} for a friendly local shop, end with a question to invite comments.</i></li>
+</ul>
+<div class="note tip">พรอมต์ส่วนใหญ่เป็นภาษาอังกฤษ เพราะโมเดลภาพและวิดีโอทำตามภาษาอังกฤษได้ดีที่สุด เขียนภาษาไทยก็ได้ แต่ส่วนที่ให้ AI “วาด” หรือ “ทำคลิป” แนะนำให้เป็นภาษาอังกฤษ</div>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="settings.html"><small>← ก่อนหน้า</small>ตั้งค่าทั้งหมด</a><a class="next" href="troubleshooting.html"><small>ถัดไป →</small>แก้ปัญหาที่พบบ่อย</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

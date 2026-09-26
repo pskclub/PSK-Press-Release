@@ -6,4 +6,10 @@ To install PSK Press for Windows:
 
 The installed app checks for new versions on its own and offers to update.
 
-This repo holds only the installers and the update file (`latest.json`). It has no source code.
+📖 **User guide (Thai):** https://pskclub.github.io/PSK-Press-Release/
+
+This repo holds the installers, the update file (`latest.json`) and the user guide. It has no application source code.
+
+Maintainers:
+- The guide source is in `guide/pages/`.
+- Rebuild with `python guide/build.py`, which writes `docs/`. GitHub Pages serves `docs/` from `main`.

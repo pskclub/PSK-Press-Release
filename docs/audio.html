@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เสียง &amp; เพลง · คู่มือ PSK Press</title>
+<meta name="description" content="เลือกและฟังเสียงพากย์ โคลนเสียงของคุณ จัดคลังเพลงประกอบและเอฟเฟกต์เสียง และสร้างเอฟเฟกต์ด้วย AI">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html" aria-current="page">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">คลัง</p>
+<h1>เสียง &amp; เพลง</h1>
+<p class="lead">เลือกและฟังเสียงพากย์ โคลนเสียงของคุณ จัดคลังเพลงประกอบและเอฟเฟกต์เสียง และสร้างเอฟเฟกต์ด้วย AI</p>
+<figure><a class="shot" href="img/audio.png"><img src="img/audio.png" alt="หน้า เสียง &amp;amp; เพลง" loading="lazy" width="1440"></a><figcaption>หน้า <b>เสียง &amp; เพลง</b></figcaption></figure>
+
+<h2 id="h-1">เสียงพากย์</h2>
+<ol class="steps">
+  <li>เลือก <b>ผู้ให้บริการ</b> — ElevenLabs / Google Gemini / OpenAI (ต้องมีคีย์ของผู้ให้บริการนั้น)</li>
+  <li>แก้ <b>ข้อความตัวอย่าง</b> เป็นประโยคที่จะใช้จริง</li>
+  <li>ค้นหาเสียง แล้วกด ▶ เพื่อฟัง กด <span class="ui">โหลดใหม่</span> เพื่อดึงรายชื่อเสียงล่าสุด</li>
+  <li>ชอบเสียงไหน กด <span class="ui">ใช้เป็นค่าเริ่มต้น</span> — เสียงนั้นจะใช้กับทุกงานที่ไม่ได้เลือกเสียงเอง</li>
+</ol>
+<p>ElevenLabs ดึงรายชื่อเสียงจากบัญชีของคุณ รวมถึงเสียงที่โคลนไว้ ส่วน Gemini และ OpenAI ไม่มีบริการดึงรายชื่อเสียง แอปจึงใช้รายชื่อตามเอกสารของผู้ให้บริการ</p>
+
+<h3 id="h-2">โคลนเสียง (ElevenLabs)</h3>
+<ol class="steps">
+  <li>ใส่ <b>ชื่อเสียง</b> และ <b>คำอธิบาย (ไม่บังคับ)</b></li>
+  <li><span class="ui">เลือกไฟล์เสียง</span> — แนะนำ 1–3 นาทีของเสียงพูดชัด ๆ ไม่มีดนตรี ไฟล์ละไม่เกิน 10 MB</li>
+  <li>เปิด <b>ลดเสียงรบกวน</b> ถ้าอัดในห้องที่มีเสียงรอบข้าง</li>
+  <li>ติ๊กยืนยันว่าคุณเป็นเจ้าของเสียงหรือได้รับอนุญาตจากเจ้าของเสียง (จำเป็น)</li>
+  <li><span class="ui">โคลนเสียง</span> — เสียงใหม่จะอยู่ใน <b>เสียงที่โคลนไว้</b> และในตัวเลือกเสียงทุกที่ (มีป้าย “โคลน”)</li>
+</ol>
+
+<h2 id="h-3">เพลงประกอบและเอฟเฟกต์เสียง</h2>
+<ul>
+  <li><span class="ui">นำเข้าไฟล์</span> — คัดลอกไฟล์เข้าคลังของแอป</li>
+  <li><span class="ui">เชื่อมโฟลเดอร์ที่มีอยู่</span> — ใช้ไฟล์จากโฟลเดอร์เดิมในเครื่องโดยไม่คัดลอก (ตั้งที่ <span class="path">ตั้งค่า → โฟลเดอร์และเครื่องมือ</span>)</li>
+</ul>
+<p>แต่ละไฟล์บอกว่าอยู่ “ในคลังแอป” หรือ “จากโฟลเดอร์ที่เชื่อม” ไฟล์ในคลังแอปลบได้ในหน้านี้</p>
+<div class="note warn">ใช้เฉพาะเพลงและเสียงที่คุณมีสิทธิ์นำไปใช้ในวิดีโอ ถ้าจะใช้เพลงฮิตบน TikTok ให้เลือกเพลงตอนโพสต์ในช่อง “ชื่อเสียง/เพลงใน TikTok” แทนการใส่ในไฟล์</div>
+
+<h3 id="h-4">สร้างเอฟเฟกต์เสียงด้วย AI (ElevenLabs)</h3>
+<p>ในแท็บ <b>เอฟเฟกต์เสียง</b> → <b>สร้างเอฟเฟกต์เสียงด้วย AI</b>:</p>
+<ul>
+  <li><b>อธิบายเสียง (อังกฤษได้ผลดีสุด)</b> — เช่น <i>whoosh transition</i>, <i>cash register ding</i> หรือกดชิปตัวอย่าง</li>
+  <li><b>ชื่อไฟล์</b> และ <b>ความยาว</b> 0.5–10 วินาที</li>
+  <li><span class="ui">สร้าง</span> — ไฟล์ใหม่จะเข้าคลังเอฟเฟกต์ ใช้เป็นเสียงตอนเปลี่ยนฉากหรือเสียงประกอบฮุคได้</li>
+</ul>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="characters.html"><small>← ก่อนหน้า</small>ตัวละคร</a><a class="next" href="settings.html"><small>ถัดไป →</small>ตั้งค่าทั้งหมด</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

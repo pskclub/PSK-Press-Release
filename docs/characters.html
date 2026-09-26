@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ตัวละคร · คู่มือ PSK Press</title>
+<meta name="description" content="คนหรือมาสคอตที่หน้าตาเหมือนเดิมทุกคลิป — ใช้เป็นตัวละครในเรื่องเล่า พรีเซนเตอร์ในคลิปขายสินค้า นายแบบในชุดภาพ และโฮสต์พอดแคสต์">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html" aria-current="page">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">คลัง</p>
+<h1>ตัวละคร</h1>
+<p class="lead">คนหรือมาสคอตที่หน้าตาเหมือนเดิมทุกคลิป — ใช้เป็นตัวละครในเรื่องเล่า พรีเซนเตอร์ในคลิปขายสินค้า นายแบบในชุดภาพ และโฮสต์พอดแคสต์</p>
+<figure><a class="shot" href="img/characters.png"><img src="img/characters.png" alt="หน้า ตัวละคร" loading="lazy" width="1440"></a><figcaption>หน้า <b>ตัวละคร</b></figcaption></figure>
+
+<h2 id="h-1">สร้างตัวละคร</h2>
+<ol class="steps">
+  <li>กด <span class="ui">สร้างตัวละคร</span></li>
+  <li><b>ใส่รูป</b> (แนะนำ) — อัปโหลดรูปหน้าหรือชีตตัวละคร ตัวละครที่มีรูปอ้างอิงจะหน้าตาคงที่กว่ามาก</li>
+  <li>กด <span class="ui">ให้ AI กรอกจากรูป</span> — AI อ่านลักษณะภายนอกจากรูปแล้วกรอกช่องให้ (กดเลิกทำได้) AI บรรยายเฉพาะสิ่งที่เห็น ไม่เดาว่าเป็นใคร</li>
+  <li>ตรวจและแก้ช่องต่าง ๆ:
+    <ul>
+      <li><b>ชื่อ</b> — ใช้ในบทพูดเท่านั้น ภาพจะบรรยายด้วยหน้าตาแทน</li>
+      <li><b>เพศ</b>, <b>อายุ</b>, <b>เชื้อชาติ</b>, <b>บทบาท</b></li>
+      <li><b>ทรงผม / สีผม</b>, <b>การแต่งกาย</b>, <b>รายละเอียดอื่น</b></li>
+      <li><b>คำอธิบายที่ใช้กับ AI</b> — ว่างไว้ = ประกอบจากช่องด้านบนอัตโนมัติ</li>
+      <li><b>เสียงประจำตัว (สำหรับพอดแคสต์)</b></li>
+    </ul>
+  </li>
+  <li><span class="ui">บันทึก</span></li>
+</ol>
+
+<h2 id="h-2">ชีตตัวละคร</h2>
+<p><span class="ui">ให้ AI วาดชีตตัวละคร</span> สร้างภาพอ้างอิงบนพื้นเทาอ่อน มีทั้งตัว 1 ท่าและหน้า 4 มุม (หน้าตรง สามส่วนซ้าย ด้านข้าง สามส่วนขวา) ช่วยให้ AI วาดคนเดิมได้แม่นขึ้นทุกฉาก เลือก <b>สไตล์ชีต</b> ได้: ภาพถ่ายสมจริง, ตัวการ์ตูน 3D, อนิเมะ, การ์ตูน 2D, มาสคอตน่ารัก ถ้ามีรูปอยู่แล้ว ปุ่มจะเป็น <span class="ui">วาดชีตใหม่จากรูปนี้</span></p>
+
+<div class="note warn"><span class="t">สิทธิ์ในใบหน้า</span>
+ใช้รูปคนจริงเฉพาะเมื่อได้รับอนุญาตจากเจ้าของใบหน้าแล้วเท่านั้น อย่าใช้รูปดาราหรือคนมีชื่อเสียง และอย่าตั้งชื่อตัวละครซ้ำคนดัง นอกจากผิดสิทธิ์แล้ว Google Flow ยังปฏิเสธคลิปแบบนี้บ่อย</div>
+
+<h2 id="h-3">ตัวละครถูกใช้อย่างไร</h2>
+<ul>
+  <li><b>เรื่องเล่า</b> — ตัวละครหลัก หน้าตาเหมือนเดิมทุกฉาก</li>
+  <li><b>คลิปขายสินค้า</b> — ผู้นำเสนอ ในโหมดแผ่นสตอรี่บอร์ด รูปตัวละครจะถูกส่งเป็นรูปนายแบบ (รูปสุดท้าย) และในคำสั่งทำคลิปจะเขียนว่า “คนที่คล้ายกับคนในภาพ” เพื่อลดการถูกปฏิเสธ</li>
+  <li><b>ชุดภาพสินค้า</b> — นายแบบ/นางแบบ</li>
+  <li><b>พอดแคสต์</b> — โฮสต์ (ปุ่ม <span class="ui">เลือกจากตัวละคร</span> ดึงรูป คำอธิบาย และเสียงประจำตัว)</li>
+</ul>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="products.html"><small>← ก่อนหน้า</small>สินค้า</a><a class="next" href="audio.html"><small>ถัดไป →</small>เสียง &amp; เพลง</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

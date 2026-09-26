@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คลิปแรกใน 10 นาที · คู่มือ PSK Press</title>
+<meta name="description" content="ทำคลิปขายสินค้า 15 วินาทีตั้งแต่วางลิงก์สินค้า ตรวจสตอรี่บอร์ด จนได้วิดีโอและโพสต์ลง TikTok">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html" aria-current="page">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">เริ่มต้น</p>
+<h1>คลิปแรกใน 10 นาที</h1>
+<p class="lead">ทำคลิปขายสินค้า 15 วินาทีตั้งแต่วางลิงก์สินค้า ตรวจสตอรี่บอร์ด จนได้วิดีโอและโพสต์ลง TikTok</p>
+<div class="note info"><span class="t">ก่อนเริ่ม</span>
+ทำ <a href="connect.html">เชื่อมเบราว์เซอร์</a> และ <a href="setup.html">ตั้งค่าครั้งแรก</a> ให้เรียบร้อย ตัวอย่างนี้ใช้ค่าที่แนะนำ:
+<ul>
+  <li>Gemini ผ่านเว็บ — เขียนบทและวาดภาพ</li>
+  <li>Google Flow — ทำคลิป (ใช้ประมาณ 24–40 เครดิต Flow ต่อคลิป 15 วินาที)</li>
+</ul></div>
+
+<h2 id="h-1">1. เลือกสินค้า</h2>
+<ol class="steps">
+  <li>เปิดเมนู <b>คลิปขายสินค้า</b></li>
+  <li>ในแผง <b>สินค้า</b> วางลิงก์หน้าสินค้า (เช่น Shopee) ในช่อง “วางลิงก์หน้าสินค้า เพื่อดึงชื่อ รายละเอียด และรูป” แล้วกด <span class="ui">เพิ่ม</span> — หรือกด <span class="ui">เลือกจากคลัง</span> ถ้ามีสินค้าในคลังแล้ว</li>
+  <li>ตรวจว่าสินค้ามีรูป รูปแรก (รูปหลัก) คือรูปที่ AI จะยึดเป็นต้นแบบหน้าตาสินค้า</li>
+</ol>
+
+<h2 id="h-2">2. ดูค่าที่ตั้งไว้</h2>
+<p>หน้าคลิปขายสินค้าตั้งค่าเริ่มต้นไว้ให้แล้ว:</p>
+<ul>
+  <li>ความยาว <b>15 วิ</b> — 2 แผ่นสตอรี่บอร์ด แผ่นละ 4 ช็อต = 2 คลิป คลิปละ 8 วินาที</li>
+  <li>รูปแบบคลิป <b>แผ่นสตอรี่บอร์ด (หลายช็อต = 1 คลิป)</b></li>
+  <li>เสียงคือ <b>คนในคลิปพูดเอง</b></li>
+  <li>เปิด <b>ตรวจฉาก (storyboard) ก่อนสร้างจริง</b> ไว้ให้แล้ว</li>
+</ul>
+<p>สิ่งที่ควรเติม:</p>
+<ul>
+  <li><b>ผู้นำเสนอ (ไม่บังคับ)</b> → <span class="ui">เลือกตัวละคร</span> — เลือกตัวละครที่มีรูป เพื่อให้คลิปมีคนพูด ถ้าไม่เลือก คลิปจะเห็นแค่สินค้าหรือมือ (สร้างตัวละครได้ที่ <a href="characters.html">ตัวละคร</a>)</li>
+  <li><b>ประโยคปิดการขาย (แผ่นสุดท้าย)</b> — เช่น “ลองกดตะกร้าดูก่อน แล้วจะรู้ว่าทำไมใครก็บอกต่อ”</li>
+</ul>
+<div class="note tip"><span class="t">เลือกโมเดลให้เหมาะ</span>
+ค่าเริ่มต้นคือ <b>Omni 1.1 Flash</b> (12 เครดิต/คลิป) ซึ่งประหยัด แต่มักปฏิเสธคลิปที่มีหน้าคนสมจริง ถ้าคลิปมีพรีเซนเตอร์ แนะนำเปลี่ยน <b>โมเดลวิดีโอ (Google Flow)</b> เป็น <b>Veo 3.1 - Fast</b> (20 เครดิต/คลิป) ซึ่งทดสอบจริงแล้วผ่านได้ดีกว่า</div>
+
+<h2 id="h-3">3. เริ่มสร้าง</h2>
+<p>ดูการ์ด <b>พร้อมสร้าง</b> ด้านขวา — ต้องไม่มีกล่อง “ต้องตั้งค่าก่อนสร้าง” แล้วกด <span class="ui">สร้างเลย</span> งานจะผลิตอยู่เบื้องหลัง ปิดหน้านี้ไปทำอย่างอื่นได้</p>
+<p>ขั้นแรก AI จะวางบทและวาดแผ่นสตอรี่บอร์ด ใช้เวลาราว 2–4 นาที แล้วงานจะหยุดรอให้คุณตรวจ แอปจะเด้งแจ้งเตือน และหน้าภาพรวมจะขึ้นในกล่อง <b>ต้องจัดการ</b></p>
+
+<h2 id="h-4">4. ตรวจสตอรี่บอร์ด</h2>
+<ol class="steps">
+  <li>ไปที่ <b>คิวงาน</b> แล้วกด <span class="ui">เปิดตรวจฉาก</span> ที่งานนั้น</li>
+  <li>อ่านบทพูดแต่ละช็อต แก้ได้ทันที (บันทึกเอง) — บทแต่ละแผ่นควรสั้นพอให้พูดจบใน 8 วินาที (ประมาณ 58–72 ตัวอักษร)</li>
+  <li>ดูภาพแผ่นสตอรี่บอร์ด ถ้าไม่ชอบกด <span class="ui">วาดแผ่นใหม่</span></li>
+  <li>อยากเห็นคลิปก่อน กด <span class="ui">สร้างคลิป</span> ที่แผ่นนั้น (ใช้เครดิต Flow ใช้เวลา 1–3 นาที) คลิปที่ทำไว้แล้วจะใช้ตอนเรนเดอร์ ไม่เสียเครดิตซ้ำ</li>
+  <li>พอใจแล้วกด <span class="ui">อนุมัติและเรนเดอร์</span></li>
+</ol>
+<p>รายละเอียดทั้งหมดอยู่ที่ <a href="storyboard.html">ตรวจฉาก (storyboard)</a></p>
+
+<h2 id="h-5">5. ได้วิดีโอ</h2>
+<p>เมื่อเสร็จ งานขึ้นสถานะ <b>เสร็จ</b> เปิดดูได้ที่ <b>ผลงาน</b> ไฟล์ MP4 อยู่ใน <code>Videos\PSK Press\วันที่\ชื่องาน</code> พร้อมแคปชันและแฮชแท็กที่ AI เขียนให้</p>
+
+<h2 id="h-6">6. โพสต์</h2>
+<ol class="steps">
+  <li>ใน <b>ผลงาน</b> เปิดคลิปแล้วกด <span class="ui">โพสต์</span> (หรือไปเมนู <b>โพสต์</b> แล้วเลือกคลิป)</li>
+  <li>เลือกแพลตฟอร์ม <b>TikTok</b> ตรวจแคปชัน และ <b>ผู้ที่ดูได้</b></li>
+  <li>ครั้งแรกแนะนำปิด <b>กดเผยแพร่ให้อัตโนมัติ</b> แอปจะอัปโหลดและกรอกข้อมูลให้ครบ แล้วรอคุณตรวจและกดเผยแพร่เองในแท็บ TikTok</li>
+  <li>กด <span class="ui">โพสต์ 1 รายการ</span> ตรวจสรุปในหน้ายืนยัน แล้วกด <span class="ui">เตรียมโพสต์</span></li>
+</ol>
+<p>อ่านต่อ: <a href="publish.html">โพสต์</a> · <a href="product.html">คลิปขายสินค้าแบบละเอียด</a> · <a href="ai-clips.html">คลิป AI ด้วย Google Flow</a></p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="setup.html"><small>← ก่อนหน้า</small>ตั้งค่าครั้งแรก</a><a class="next" href="create-basics.html"><small>ถัดไป →</small>พื้นฐานหน้าสร้างงาน</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

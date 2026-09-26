@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ตั้งค่าครั้งแรก · คู่มือ PSK Press</title>
+<meta name="description" content="เลือกว่าจะใช้ AI ตัวไหนเขียนบท วาดภาพ พากย์เสียง ถอดเสียง และทำคลิป — ใช้ผ่านเว็บด้วยบัญชี Google ที่มีอยู่ หรือใช้คีย์ API ก็ได้">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html" aria-current="page">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">เริ่มต้น</p>
+<h1>ตั้งค่าครั้งแรก</h1>
+<p class="lead">เลือกว่าจะใช้ AI ตัวไหนเขียนบท วาดภาพ พากย์เสียง ถอดเสียง และทำคลิป — ใช้ผ่านเว็บด้วยบัญชี Google ที่มีอยู่ หรือใช้คีย์ API ก็ได้</p>
+<p>ไปที่ <span class="path">ตั้งค่า → โมเดล AI</span> แต่ละงานเลือกผู้ให้บริการแยกกันได้ แก้แล้วอย่าลืมกด <span class="ui">บันทึก</span> มุมขวาบน ถ้าออกจากหน้าโดยยังไม่บันทึก แอปจะถามก่อน</p>
+<figure><a class="shot tall" href="img/settings-ai.png"><img src="img/settings-ai.png" alt="ตั้งค่า → โมเดล AI" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → โมเดล AI</figcaption></figure>
+
+<h2 id="h-1">สองทางเลือก: ผ่านเว็บ หรือ ผ่าน API</h2>
+<div class="table"><table>
+<tr><th></th><th>ผ่านเว็บ (ส่วนขยาย)</th><th>ผ่าน API (คีย์)</th></tr>
+<tr><td>ต้องมีอะไร</td><td>บัญชีที่ล็อกอินใน Chrome + <a href="connect.html">ส่วนขยายที่เชื่อมแล้ว</a></td><td>คีย์ API จากผู้ให้บริการ</td></tr>
+<tr><td>ค่าใช้จ่าย</td><td>ตามแพ็กเกจบัญชีเว็บของคุณ</td><td>จ่ายตามการใช้งานกับผู้ให้บริการ</td></tr>
+<tr><td>ความเร็ว / ความเสถียร</td><td>ช้ากว่า ขึ้นกับโควตาของเว็บ ทำทีละคำขอต่อเว็บ</td><td>เร็ว เสถียรกว่า</td></tr>
+<tr><td>ตัวเลือกในแอป</td><td><b>Gemini (ผ่านเว็บ · ส่วนขยาย)</b>, <b>ChatGPT (ผ่านเว็บ · ส่วนขยาย)</b>, <b>Google Flow (ผ่านส่วนขยาย)</b></td><td><b>Google Gemini (API)</b>, <b>OpenAI (API)</b>, <b>Veo (API)</b>, ElevenLabs</td></tr>
+</table></div>
+<div class="note warn"><span class="t">ข้อควรรู้เรื่องการใช้ผ่านเว็บ</span>
+การสั่งงานผ่านเว็บอัตโนมัติอาจขัดข้อกำหนดของผู้ให้บริการ และขึ้นกับโควตาบัญชี ถ้าต้องการความเสถียรให้ใช้ API key แอปไม่แก้ captcha และไม่สลับบัญชีหนีโควตา ถ้าเว็บขอให้ยืนยันตัวตนหรือแจ้งว่าโควตาหมด งานจะหยุดรอคุณ</div>
+
+<h2 id="h-2">ตั้งค่าที่แนะนำสำหรับเริ่มต้น (ไม่ต้องมีคีย์)</h2>
+<div class="table"><table>
+<tr><th>ส่วนในหน้าโมเดล AI</th><th>เลือก</th></tr>
+<tr><td><b>เขียนบท (LLM)</b> → ผู้ให้บริการ</td><td>Gemini (ผ่านเว็บ · ส่วนขยาย)</td></tr>
+<tr><td><b>สร้างภาพ</b> → ผู้ให้บริการ</td><td>Gemini (ผ่านเว็บ · ส่วนขยาย)</td></tr>
+<tr><td><b>วิดีโอ AI</b> → ผู้ให้บริการ</td><td>Google Flow (ผ่านส่วนขยาย)</td></tr>
+<tr><td><b>เสียงพากย์เริ่มต้น</b></td><td>ต้องใช้คีย์ (ดูด้านล่าง) — ถ้าใช้แบบ “คนในคลิปพูดเอง” ในคลิป AI ไม่ต้องใช้เสียงพากย์</td></tr>
+</table></div>
+
+<h2 id="h-3">คีย์ API</h2>
+<p>ที่ <span class="path">ตั้งค่า → คีย์ API</span> คีย์เก็บในระบบของ Windows ไม่ได้เขียนลงไฟล์ และส่งตรงถึงผู้ให้บริการเท่านั้น</p>
+<ol class="steps">
+  <li>กด <span class="ui">ขอคีย์</span> ในแถวของผู้ให้บริการ เพื่อไปหน้าสร้างคีย์</li>
+  <li>วางคีย์ในช่อง แล้วกด <span class="ui">บันทึก</span> แอปจะทดสอบคีย์ทันที</li>
+  <li>ป้ายเปลี่ยนเป็น <b>ตั้งแล้ว</b> ปุ่ม <span class="ui">ตรวจ</span> ใช้ทดสอบซ้ำ ปุ่ม <span class="ui">ลบ</span> ใช้ลบคีย์ (มีถามยืนยัน)</li>
+</ol>
+<figure><a class="shot" href="img/settings-keys.png"><img src="img/settings-keys.png" alt="ตั้งค่า → คีย์ API" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → คีย์ API</figcaption></figure>
+<div class="table"><table>
+<tr><th>คีย์</th><th>ใช้ทำอะไร</th></tr>
+<tr><td><b>Google AI (Gemini)</b></td><td>เขียนบท สร้างภาพ เสียงพากย์ Gemini และวิดีโอ Veo ผ่าน API</td></tr>
+<tr><td><b>OpenAI (GPT / Whisper)</b></td><td>เขียนบท สร้างภาพ เสียงพากย์ และ <b>ถอดเสียงเป็นซับ</b> (Whisper) — จำเป็นสำหรับ <a href="remix.html">ขัดเกลาคลิปพูด</a> และซับที่ถอดจากเสียงในคลิป</td></tr>
+<tr><td><b>ElevenLabs (TTS)</b></td><td>เสียงพากย์คุณภาพสูง โคลนเสียง และสร้างเอฟเฟกต์เสียง</td></tr>
+</table></div>
+
+<h2 id="h-4">ตั้งค่าแต่ละส่วนในหน้าโมเดล AI</h2>
+<h3 id="h-5">เขียนบท (LLM) และ สร้างภาพ</h3>
+<ul>
+  <li><b>ผู้ให้บริการ</b> — Google Gemini (API) / OpenAI (API) / ChatGPT (ผ่านเว็บ) / Gemini (ผ่านเว็บ)</li>
+  <li><b>โมเดล</b> — ถ้าใช้ API รายชื่อโมเดลดึงสดจากบัญชีของคุณ ถ้าใช้ผ่านเว็บ จะใช้โมเดลที่ตั้งไว้ในหน้าเว็บ</li>
+  <li><b>+ ใช้ Base URL อื่น (proxy)</b> — สำหรับผู้ที่ใช้ proxy เท่านั้น ปกติไม่ต้องแตะ</li>
+</ul>
+<h3 id="h-6">เสียงพากย์เริ่มต้น</h3>
+<p>เลือก <b>ผู้ให้บริการ</b> (ElevenLabs / Google Gemini / OpenAI) <b>โมเดล</b> และ <b>เสียง</b> ใช้เป็นค่าเริ่มต้นของทุกงาน แต่ละงานเปลี่ยนเสียงเองได้ในส่วน <a href="finish.html">การตกแต่ง</a> ฟังตัวอย่างเสียงได้ที่ <a href="audio.html">เสียง &amp; เพลง</a></p>
+<h3 id="h-7">ถอดเสียง (ซับจากคลิปพูด)</h3>
+<p>เลือก <b>โมเดล</b> และ <b>ภาษาเริ่มต้น</b> (ค่าเริ่มต้นคือ “ตรวจอัตโนมัติ”) ใช้คีย์ OpenAI</p>
+<h3 id="h-8">วิดีโอ AI</h3>
+<ul>
+  <li><b>ปิด</b> — ไม่ทำคลิป AI ใช้ภาพนิ่งขยับช้า ๆ แทน</li>
+  <li><b>Google Flow (ผ่านส่วนขยาย)</b> — ใช้เครดิต Flow ของบัญชี Google ใน Chrome ดู <a href="ai-clips.html">คลิป AI ด้วย Google Flow</a></li>
+  <li><b>Veo (API)</b> — ใช้คีย์ Google AI จ่ายตามการใช้งาน</li>
+</ul>
+<p>เมื่อเลือก Google Flow จะมีสวิตช์ <b>ยืนยันสิทธิ์ใช้รูปภาพใน Google Flow ให้อัตโนมัติ</b> เมื่อคุณแนบรูป Flow จะถามทุกครั้งว่าคุณมีสิทธิ์ใช้รูปนั้นไหม ถ้าเปิดสวิตช์นี้ แอปจะกดยืนยันให้เอง แอปจะถามก่อนเปิด (ปุ่ม <span class="ui">ฉันมีสิทธิ์ใช้ทุกรูป — เปิด</span>) ให้เปิดเฉพาะเมื่อรูปสินค้าและรูปคนทุกรูปที่ใช้ คุณมีสิทธิ์ใช้จริง</p>
+
+<h2 id="h-9">ตรวจความพร้อม</h2>
+<p>กลับไปหน้า <b>ภาพรวม</b> กล่อง <b>ตั้งค่าให้พร้อมก่อนสร้าง</b> ทุกข้อควรขึ้น “พร้อมแล้ว” และในหน้าสร้างงานทุกหน้า การ์ด <b>พร้อมสร้าง</b> ด้านขวาจะบอกสิ่งที่ยังขาด เช่น:</p>
+<ul>
+  <li>“คีย์ … ” → ลิงก์ <span class="ui">ใส่คีย์</span></li>
+  <li>“… ต้องเชื่อมส่วนขยายในเบราว์เซอร์ก่อน” → <span class="ui">ไปเชื่อมต่อ</span></li>
+  <li>“ล็อกอิน … ใน Chrome” → <span class="ui">ดูบัญชีที่ล็อกอิน</span></li>
+  <li>“FFmpeg (ตัวประกอบวิดีโอ) ใช้ไม่ได้” → <span class="ui">ตรวจเครื่องมือ</span></li>
+</ul>
+<p>ระหว่างที่ยังตั้งค่าไม่ครบ ปุ่ม <span class="ui">สร้างเลย</span> จะกดไม่ได้ แต่ยังกด <span class="ui">เก็บเข้าคิวไว้ก่อน</span> ได้ แล้วค่อยเริ่มคิวเมื่อตั้งค่าครบ</p>
+<p>ตั้งค่าส่วนอื่น (ซับไตเติล การเรนเดอร์ โฟลเดอร์ คิว) ดูได้ที่ <a href="settings.html">ตั้งค่าทั้งหมด</a></p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="connect.html"><small>← ก่อนหน้า</small>เชื่อมเบราว์เซอร์และบัญชี</a><a class="next" href="quickstart.html"><small>ถัดไป →</small>คลิปแรกใน 10 นาที</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

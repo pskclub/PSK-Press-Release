@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เรื่องเล่า AI · คู่มือ PSK Press</title>
+<meta name="description" content="พิมพ์หัวข้อ แล้วให้ AI เขียนบท วาดภาพทีละฉาก พากย์เสียง ใส่ซับ และตัดต่อให้เสร็จ — ตั้งแต่คลิปสั้น 15 วินาทีถึงเรื่องยาว 10 นาที">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html" aria-current="page">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">สร้างงาน</p>
+<h1>เรื่องเล่า AI</h1>
+<p class="lead">พิมพ์หัวข้อ แล้วให้ AI เขียนบท วาดภาพทีละฉาก พากย์เสียง ใส่ซับ และตัดต่อให้เสร็จ — ตั้งแต่คลิปสั้น 15 วินาทีถึงเรื่องยาว 10 นาที</p>
+<figure><a class="shot tall" href="img/story.png"><img src="img/story.png" alt="หน้า เรื่องเล่า AI" loading="lazy" width="1440"></a><figcaption>หน้า <b>เรื่องเล่า AI</b></figcaption></figure>
+
+<h2 id="h-1">1. เนื้อเรื่อง</h2>
+<p>เลือกโหมดที่หัวแผง:</p>
+<h3 id="h-2">ให้ AI เขียน (ค่าเริ่มต้น)</h3>
+<ul>
+  <li><b>หัวข้อ</b> — บรรทัดละ 1 เรื่อง ใส่หลายบรรทัดเพื่อสร้างหลายคลิปในครั้งเดียว กด <span class="ui">ขอไอเดีย</span> ให้ AI เสนอหัวข้อ</li>
+  <li><b>รายละเอียดเพิ่มเติม (ไม่บังคับ)</b> — โครงเรื่อง ตอนจบที่อยากได้ ข้อเท็จจริงที่ต้องมี</li>
+</ul>
+<h3 id="h-3">ใช้บทของฉัน</h3>
+<p>วางบทพากย์ใน <b>บทพากย์</b> แล้วแยกฉากด้วยบรรทัดว่าง AI จะคิดภาพให้ตรงกับแต่ละฉาก โดยไม่แก้คำพูดของคุณ</p>
+
+<h2 id="h-4">2. แนวเรื่องและภาพ</h2>
+<div class="table"><table>
+<tr><th>ช่อง</th><th>ตัวเลือก (ค่าเริ่มต้นตัวหนา)</th></tr>
+<tr><td><b>แนวเรื่อง</b></td><td><b>เรื่องสั้นให้ข้อคิด</b>, นิทานเด็ก, ดราม่าหักมุม, ตลกขำขัน, เรื่องผี ลุ้นระทึก, สารคดีความรู้, ประวัติศาสตร์ ตำนาน, ทราเวลวล็อก, แรงบันดาลใจ, กำหนดเอง</td></tr>
+<tr><td><b>สไตล์ภาพ</b></td><td><b>ภาพถ่ายสมจริงแบบภาพยนตร์</b>, แอนิเมชัน 3D, อนิเมะ, การ์ตูน 2D, สีน้ำนิทาน, กระดาษตัดแปะ, ลายเส้นดินสอ, ฟิล์มเรโทร, พิกเซลอาร์ต, มืดหม่น สยองขวัญ</td></tr>
+<tr><td><b>อารมณ์ / สำเนียง</b></td><td><b>สนุก ชวนติดตาม</b>, อบอุ่น ซึ้ง, ตื่นเต้น ลุ้นระทึก, ขำขัน กวน ๆ, จริงจัง น่าเชื่อถือ, ลึกลับ, อีสาน, คำเมือง, ปักษ์ใต้</td></tr>
+<tr><td><b>กลุ่มคนดู</b></td><td><b>ทั่วไป</b>, วัยรุ่น, วัยทำงาน, แม่บ้าน ครอบครัว, ผู้สูงอายุ, เด็ก</td></tr>
+</table></div>
+
+<h2 id="h-5">3. ความยาวและภาษา</h2>
+<ul>
+  <li><b>ความยาวโดยประมาณ</b> — 15 วิ, 30 วิ, <b>45 วิ</b>, 1 นาที, 1.5 นาที, 3 นาที, 5 นาที, 10 นาที ตั้งแต่ 3 นาทีขึ้นไป เรื่องจะมีหลายสิบฉาก ใช้เวลาและเครดิต AI มากขึ้น</li>
+  <li><b>จำนวนฉาก</b> — 0 = คำนวณจากความยาวให้ (ประมาณฉากละ 8 วินาที)</li>
+  <li><b>ภาษาพากย์</b> — ไทย, English, 中文, 日本語, Tiếng Việt</li>
+  <li><b>ประโยคปิดท้าย</b> — เช่น “กดติดตามไว้นะ” AI จะจบฉากสุดท้ายด้วยประโยคนี้</li>
+</ul>
+
+<h2 id="h-6">4. ตัวละครและสินค้า</h2>
+<ul>
+  <li><b>ตัวละครหลัก</b> → <span class="ui">เพิ่มตัวละคร</span> — เลือกจาก <a href="characters.html">คลังตัวละคร</a> ตัวละครที่มีรูปอ้างอิงจะหน้าตาเหมือนเดิมทุกฉาก ชื่อตัวละครใช้ในบทพูดเท่านั้น ส่วนคำสั่งวาดภาพจะใช้ลักษณะภายนอกแทนชื่อ</li>
+  <li><b>แทรกสินค้า (ไม่บังคับ)</b> → <span class="ui">เลือกสินค้าจากคลัง</span> แล้วเลือกวิธีแทรก:
+    <ul>
+      <li><b>วางเป็นฉากหลัง</b> — เห็นสินค้าในฉากหลัง 1–2 ฉาก ไม่พูดถึง</li>
+      <li><b>ตัวละครใช้/ถือ</b> — ตัวละครใช้หรือถือสินค้า ไม่พูดถึงตรง ๆ</li>
+      <li><b>พูดถึงตอนท้าย</b> — พูดถึงสั้น ๆ อย่างเป็นธรรมชาติช่วงท้าย</li>
+      <li><b>โชว์ + แนะนำ</b> — โชว์การใช้งานและจบด้วยคำแนะนำสั้น ๆ</li>
+    </ul>
+  </li>
+  <li><b>ใช้วิดีโอสินค้าเป็นฉาก</b> — ถ้าสินค้ามีวิดีโอ</li>
+</ul>
+
+<h2 id="h-7">5. ขั้นสูง</h2>
+<ul>
+  <li><b>ทำภาพเคลื่อนไหวด้วย AI วิดีโอ (Google Flow / Veo)</b> — ทำทุกฉากเป็นคลิปวิดีโอ พอเปิดสวิตช์นี้ “ตรวจฉาก” จะเปิดให้อัตโนมัติ ดู <a href="ai-clips.html">คลิป AI ด้วย Google Flow</a></li>
+  <li><b>ตรวจฉาก (storyboard) ก่อนสร้างจริง</b> — AI วางบทและทำภาพตัวอย่างทุกฉากก่อน แล้วหยุดรอคุณแก้และอนุมัติ</li>
+  <li><b>คำสั่งเพิ่มเติมถึง AI</b></li>
+</ul>
+<p>ถ้าไม่เปิดคลิป AI ทุกฉากจะเป็นภาพนิ่งที่ขยับช้า ๆ (ซูมเข้า-ออก) พร้อมเสียงพากย์และซับ ประหยัดและเร็วที่สุด</p>
+<p>ส่วนการตกแต่ง ดู <a href="finish.html">การตกแต่งและส่งออก</a></p>
+
+<h2 id="h-8">ตัวอย่างการใช้งาน</h2>
+<ul>
+  <li><b>นิทานก่อนนอน 10 เรื่องในครั้งเดียว</b> — แนวเรื่อง “นิทานเด็ก” สไตล์ “สีน้ำนิทาน” อารมณ์ “อบอุ่น ซึ้ง” ใส่ชื่อนิทาน 10 บรรทัด ความยาว 1 นาที</li>
+  <li><b>สารคดีสั้นช่องความรู้</b> — แนวเรื่อง “สารคดีความรู้” สไตล์ “ภาพถ่ายสมจริงแบบภาพยนตร์” เปิดซับแบบไฮไลต์คำ ใส่ฮุคให้ AI เขียน</li>
+  <li><b>เรื่องผีภาษาอีสาน</b> — แนวเรื่อง “เรื่องผี ลุ้นระทึก” อารมณ์ “อีสาน” สไตล์ “มืดหม่น สยองขวัญ”</li>
+</ul>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="ai-clips.html"><small>← ก่อนหน้า</small>คลิป AI ด้วย Google Flow</a><a class="next" href="news.html"><small>ถัดไป →</small>ข่าว</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

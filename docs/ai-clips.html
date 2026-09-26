@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คลิป AI ด้วย Google Flow · คู่มือ PSK Press</title>
+<meta name="description" content="ทำฉากเป็นคลิปวิดีโอ AI ผ่าน Google Flow ในเบราว์เซอร์ของคุณ — เลือกโมเดล ความละเอียด ความยาว เสียง และรู้ว่าแอปทำอะไรเมื่อ Flow ปฏิเสธ">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html" aria-current="page">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">สร้างงาน</p>
+<h1>คลิป AI ด้วย Google Flow</h1>
+<p class="lead">ทำฉากเป็นคลิปวิดีโอ AI ผ่าน Google Flow ในเบราว์เซอร์ของคุณ — เลือกโมเดล ความละเอียด ความยาว เสียง และรู้ว่าแอปทำอะไรเมื่อ Flow ปฏิเสธ</p>
+<p>เปิดใช้ได้ในหน้า <b>คลิปขายสินค้า</b> และ <b>เรื่องเล่า AI</b> ด้วยสวิตช์ <b>ทำภาพเคลื่อนไหวด้วย AI วิดีโอ (Google Flow / Veo)</b> ต้องตั้ง <span class="path">ตั้งค่า → โมเดล AI → วิดีโอ AI</span> เป็น <b>Google Flow (ผ่านส่วนขยาย)</b> หรือ <b>Veo (API)</b> ไว้ก่อน</p>
+
+<h2 id="h-1">Google Flow ทำงานอย่างไรกับแอป</h2>
+<ul>
+  <li>แอปสั่งงานในแท็บ Google Flow ของ Chrome ที่คุณล็อกอินไว้ ทำทีละคลิป ใช้เครดิต Flow ของบัญชีคุณ</li>
+  <li><b>1 งาน = 1 โปรเจกต์ใน Flow</b> — แอปสร้างโปรเจกต์ใหม่ให้แต่ละงาน คลิปของงานต่าง ๆ จึงไม่ปนกันในหน้า Flow</li>
+  <li>แอปอ่านจำนวนเครดิตที่ใช้จากหน้า Flow แล้วเก็บไว้ในบันทึกของงาน</li>
+  <li>ถ้า Flow ขอให้ยืนยันสิทธิ์ใช้รูป งานจะรอคุณกด หรือเปิดให้แอปกดยืนยันเองได้ที่ <a href="setup.html">ตั้งค่า → วิดีโอ AI</a></li>
+  <li>กด <span class="ui">ยกเลิก</span> งานในคิวแล้ว แอปจะหยุดงานใน Chrome ด้วย ไม่มีคลิปถูกสร้างต่อหลังยกเลิก</li>
+</ul>
+
+<h2 id="h-2">ตั้งค่าคลิป</h2>
+<div class="table"><table>
+<tr><th>ช่อง</th><th>ตัวเลือก</th></tr>
+<tr><td><b>รูปแบบคลิป</b> (คลิปขายสินค้า)</td><td><b>1 ฉาก = 1 คลิป</b> / <b>แผ่นสตอรี่บอร์ด (หลายช็อต = 1 คลิป)</b> — ดู <a href="product.html#sheet">แผ่นสตอรี่บอร์ด</a></td></tr>
+<tr><td><b>ช็อตต่อแผ่น</b></td><td>3 / 4 / 5 ช็อต</td></tr>
+<tr><td><b>โมเดลวิดีโอ (Google Flow)</b></td><td>ดูตารางด้านล่าง</td></tr>
+<tr><td><b>ความละเอียด</b></td><td>720p (ค่าเริ่มต้น) / 360p (เร็วขึ้น)</td></tr>
+<tr><td><b>ความยาวคลิปต่อฉาก</b></td><td>4 / 6 / 8 (ค่าเริ่มต้น) / 10 วิ (10 วิ เฉพาะ Flow)</td></tr>
+<tr><td><b>คลิปล้วน (ไม่ใช้ภาพนิ่งแทน)</b></td><td>เปิด (ค่าเริ่มต้น) — ดู <a href="#fail">เมื่อคลิปสร้างไม่สำเร็จ</a></td></tr>
+</table></div>
+<p>ใต้ช่องความยาวมีบรรทัดวางแผน เช่น <i>ประมาณ 2 แผ่น × 4 ช็อต = 2 คลิป (16 วิ) · บทแต่ละแผ่นพูดต่อเนื่อง 58–72 ตัวอักษร</i> แอปเขียนบทให้พูดจบในเวลาของคลิป จะได้ไม่ต้องต่อด้วยภาพนิ่ง</p>
+
+<h3 id="h-3">เลือกโมเดล</h3>
+<div class="table"><table>
+<tr><th>โมเดล</th><th>เครดิต/คลิป</th><th>เหมาะกับ</th></tr>
+<tr><td><b>Omni 1.1 Flash</b> (ค่าเริ่มต้น)</td><td>12</td><td>เร็ว ประหยัดเครดิต แต่มักปฏิเสธคลิปที่มีหน้าคนสมจริง เหมาะกับคลิปสินค้าล้วน มือ หรือภาพการ์ตูน</td></tr>
+<tr><td><b>Veo 3.1 - Lite</b></td><td>น้อย</td><td>เบา ประหยัดเครดิต</td></tr>
+<tr><td><b>Veo 3.1 - Fast</b></td><td>20</td><td>สมดุลคุณภาพกับเครดิต <b>ผ่านคลิปที่มีพรีเซนเตอร์ได้ดีกว่า</b> (ทดสอบจริงแล้ว) แนะนำสำหรับแผ่นสตอรี่บอร์ดที่มีคนพูด</td></tr>
+<tr><td><b>Veo 3.1 - Quality</b></td><td>มาก</td><td>คุณภาพสูงสุด</td></tr>
+<tr><td><b>ตามที่ตั้งไว้ใน Flow</b></td><td>—</td><td>ไม่เปลี่ยนโมเดลในหน้า Flow</td></tr>
+</table></div>
+<p>เครดิตเป็นตัวเลขที่ Flow แสดงตอนทดสอบ อาจเปลี่ยนตามนโยบายของ Google ดูตัวเลขจริงได้ในบันทึกของงาน</p>
+<p>ถ้าใช้ <b>Veo (API)</b> แทน Flow โมเดลตั้งที่หน้าตั้งค่า ส่วนความยาวและความละเอียดในหน้านี้ใช้กับ Veo API ด้วย</p>
+
+<h2 id="audio">เสียงในฉากวิดีโอ</h2>
+<p>สำหรับรูปแบบ 1 ฉาก = 1 คลิป และฉากที่ใช้วิดีโอสินค้า:</p>
+<div class="table"><table>
+<tr><th>ตัวเลือก</th><th>ผลลัพธ์</th></tr>
+<tr><td><b>พากย์ใหม่</b></td><td>เสียงพากย์ AI ต่อเนื่องทั้งเรื่อง ตัดเสียงเดิมของคลิปออก</td></tr>
+<tr><td><b>ใช้เสียงจากวิดีโอ</b> (ค่าเริ่มต้น)</td><td>ใช้เสียงของคลิปเอง ไม่พากย์ทับ เปิด <b>ให้คลิปพูดบทพากย์</b> ไว้ แอปจะใส่บทลงในคำสั่งทำวิดีโอ ให้ตัวละครพูดเองในคลิป ใช้เสียงแบบเดียวกันทุกฉาก</td></tr>
+<tr><td><b>ผสม</b></td><td>เสียงพากย์ AI + เสียงของคลิปเบา ๆ ด้านหลัง ปรับ <b>ความดังเสียงจากคลิป</b> 0–100</td></tr>
+</table></div>
+<p>ในโหมดแผ่นสตอรี่บอร์ด พรีเซนเตอร์พูดเองเสมอ ซับของฉากวิดีโอจะถอดจากเสียงจริงในคลิป (ต้องมีคีย์ OpenAI) ถ้าไม่มีคีย์ถอดเสียง แอปจะใช้บทที่วางไว้เป็นซับแทน ซึ่งเวลาอาจไม่ตรงคำพูดเป๊ะ</p>
+
+<h2 id="fail">เมื่อคลิปสร้างไม่สำเร็จ หรือ Flow ปฏิเสธ</h2>
+<p>Flow อาจปฏิเสธคำขอ เช่น “อาจละเมิดนโยบายเกี่ยวกับบุคคลที่มีชื่อเสียง” เมื่อภาพมีหน้าคนที่ดูสมจริง Flow ไม่หักเครดิตเมื่อปฏิเสธ แอปจะลองให้เองสูงสุด 3 รอบ และแต่ละรอบรอนานไม่เท่ากัน (สุ่ม 20–50 วินาที แล้ว 60–120 วินาที) เพื่อไม่ให้ดูเป็นการส่งถี่</p>
+<div class="table"><table>
+<tr><th>รอบ</th><th>แผ่นสตอรี่บอร์ด</th><th>1 ฉาก = 1 คลิป</th></tr>
+<tr><td>1</td><td>รูปสินค้า + แผ่น + รูปนายแบบ เขียนถึงพรีเซนเตอร์แบบ “คล้ายกับคนในภาพ” ไม่สั่งให้เหมือนเป๊ะ</td><td>คำสั่งปกติ</td></tr>
+<tr><td>2</td><td>ส่งแผ่นสตอรี่บอร์ดอย่างเดียว คำสั่งเดิม</td><td>คำสั่งที่ปรับให้ผ่านนโยบายง่ายขึ้น: ตัดชื่อตัวละคร ระบุว่าเป็นคนทั่วไปสมมติ ไม่มีโลโก้หรือตัวหนังสือ</td></tr>
+<tr><td>3</td><td>แผ่น + รูปสินค้า</td><td>เหมือนรอบ 2</td></tr>
+</table></div>
+<p>ถ้าครบ 3 รอบแล้วยังไม่ได้:</p>
+<ul>
+  <li><b>คลิปล้วน เปิดอยู่</b> — งานหยุดที่ <b>รอตรวจฉาก</b> ให้คุณแก้เฉพาะฉากหรือแผ่นที่มีปัญหา เปลี่ยนโมเดล แล้วกดสร้างคลิปใหม่ คลิปที่ทำสำเร็จแล้วเก็บไว้ ไม่เสียเครดิตซ้ำ</li>
+  <li><b>คลิปล้วน ปิดอยู่</b> — ฉากนั้นจะใช้ภาพนิ่งพร้อมเสียงพากย์แทน แล้วทำงานต่อจนจบ</li>
+</ul>
+<p>ถ้าเหตุผลคือเว็บต้องการให้คุณทำบางอย่าง เช่น ล็อกอิน ยืนยันว่าเป็นมนุษย์ ยืนยันสิทธิ์ใช้รูป หรือเครดิตหมด งานจะหยุดทันทีโดยไม่ลองซ้ำ และแจ้งว่าต้องทำอะไร</p>
+<div class="note tip"><span class="t">ลดโอกาสถูกปฏิเสธ</span>
+<ul>
+  <li>ใช้ <b>Veo 3.1 - Fast</b> กับคลิปที่มีคนสมจริง</li>
+  <li>ใช้รูปนายแบบที่คุณมีสิทธิ์ และไม่ใช่รูปคนดัง</li>
+  <li>อย่าตั้งชื่อตัวละครซ้ำคนมีชื่อเสียง</li>
+  <li>หลีกเลี่ยงโลโก้แบรนด์อื่นในภาพ</li>
+</ul>
+แอปตัดชื่อตัวละครออกจากคำสั่งภาพและวิดีโอให้แล้ว ใช้ลักษณะภายนอกแทน</div>
+
+<h2 id="h-4">ดูคลิปก่อนเรนเดอร์</h2>
+<p>ในหน้า <a href="storyboard.html">ตรวจฉาก</a> ทุกฉากหรือแผ่นที่เป็นคลิป AI มีปุ่ม <span class="ui">สร้างคลิป</span> ใช้เวลา 1–3 นาทีต่อคลิป ได้คลิปมาดูก่อน ไม่ชอบก็แก้บทหรือภาพแล้ว <span class="ui">สร้างคลิปใหม่</span> คลิปที่มีแล้วจะใช้ตอนเรนเดอร์ทันที</p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="product.html"><small>← ก่อนหน้า</small>คลิปขายสินค้า</a><a class="next" href="story.html"><small>ถัดไป →</small>เรื่องเล่า AI</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

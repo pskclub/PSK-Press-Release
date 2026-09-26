@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คิวงานและบันทึก · คู่มือ PSK Press</title>
+<meta name="description" content="งานทั้งหมดผลิตเบื้องหลัง ดูความคืบหน้า ยกเลิก ลองใหม่ สร้างซ้ำ และอ่านบันทึกทุกขั้นตอนแบบสดได้ที่นี่">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html" aria-current="page">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">งาน</p>
+<h1>คิวงานและบันทึก</h1>
+<p class="lead">งานทั้งหมดผลิตเบื้องหลัง ดูความคืบหน้า ยกเลิก ลองใหม่ สร้างซ้ำ และอ่านบันทึกทุกขั้นตอนแบบสดได้ที่นี่</p>
+<figure><a class="shot" href="img/queue.png"><img src="img/queue.png" alt="หน้า คิวงาน" loading="lazy" width="1440"></a><figcaption>หน้า <b>คิวงาน</b></figcaption></figure>
+
+<h2 id="h-1">ควบคุมคิว</h2>
+<ul>
+  <li><b>ทำพร้อมกัน</b> — 1–4 งาน ค่าเริ่มต้น 1 งาน แนะนำ 1 งานเมื่อใช้ Gemini/Flow ผ่านเว็บ เพราะแต่ละเว็บทำทีละคำขออยู่แล้ว</li>
+  <li><span class="ui">หยุดคิว</span> — หยุดรับงานใหม่ งานที่กำลังทำจะทำต่อจนเสร็จ กด <span class="ui">เริ่มคิว</span> เพื่อเดินต่อ</li>
+</ul>
+<p>แถบสถานะด้านบนบอก “กำลังผลิต N งาน · รอคิว N · รอตรวจฉาก N” งานที่ค้างอยู่จะทำต่อเมื่อเปิดแอปครั้งถัดไป (ปิดได้ที่ <span class="path">ตั้งค่า → คิวและการโพสต์ → ทำคิวที่ค้างต่อเมื่อเปิดแอป</span>)</p>
+
+<h2 id="h-2">แท็บและสถานะ</h2>
+<p>แท็บ: <b>กำลังทำ/รอ</b>, <b>ไม่สำเร็จ</b>, <b>เสร็จแล้ว</b>, <b>ทั้งหมด</b></p>
+<div class="table"><table>
+<tr><th>สถานะ</th><th>ความหมาย</th></tr>
+<tr><td>รอคิว</td><td>ยังไม่เริ่ม รอให้งานก่อนหน้าเสร็จ</td></tr>
+<tr><td>กำลังผลิต</td><td>กำลังทำ มีข้อความบอกขั้นตอนและ %</td></tr>
+<tr><td>รอตรวจฉาก</td><td>หยุดรอคุณตรวจ storyboard</td></tr>
+<tr><td>เสร็จ</td><td>ได้วิดีโอแล้ว ดูที่ผลงาน</td></tr>
+<tr><td>ล้มเหลว</td><td>ทำไม่สำเร็จ มีเหตุผลและทางแก้</td></tr>
+<tr><td>ยกเลิก</td><td>คุณยกเลิกเอง</td></tr>
+</table></div>
+
+<h2 id="h-3">ปุ่มของแต่ละงาน</h2>
+<ul>
+  <li>ไอคอนดินสอ <span class="ui">เปลี่ยนชื่อ</span> — Enter บันทึก, Esc ยกเลิก</li>
+  <li><span class="ui">เปิดตรวจฉาก</span> — งานที่รอตรวจ</li>
+  <li><span class="ui">ยกเลิก</span> — งานที่กำลังทำหรือรอตรวจจะถามก่อน ส่วนที่ทำเสร็จแล้วเก็บไว้ กดลองใหม่ภายหลังได้ แอปหยุดงานใน Chrome ด้วย</li>
+  <li><span class="ui">ลองใหม่</span> — งานที่ล้มเหลวหรือยกเลิก ใส่กลับเข้าคิว งานที่ใช้ตรวจฉากหรือคลิป AI จะใช้บท ภาพ และคลิปที่ทำไว้แล้วต่อ ไม่เสียเครดิตซ้ำ</li>
+  <li><span class="ui">สร้างซ้ำอีกชุด</span> — สร้างงานใหม่ด้วยค่าเดิม</li>
+  <li><span class="ui">ดูบันทึก</span> — เปิดบันทึกการทำงาน</li>
+  <li><span class="ui">ย้ายไปถังขยะ</span> — กด <span class="ui">เลิกทำ</span> ในข้อความที่เด้งขึ้นได้ แท็บไม่สำเร็จมีปุ่ม <span class="ui">ล้างทั้งหมด</span></li>
+</ul>
+<p>งานที่ล้มเหลวจะแสดงเหตุผลเป็นภาษาไทย ถ้ายาวกด <span class="ui">อ่านทั้งหมด</span> และมีลิงก์ไปหน้าที่แก้ได้ เช่น <span class="ui">ไปหน้าเชื่อมต่อ</span> หรือ <span class="ui">ไปที่ตั้งค่า</span> ดูความหมายของข้อความที่พบบ่อยได้ที่ <a href="troubleshooting.html">แก้ปัญหา</a></p>
+
+<h2 id="h-4">บันทึกการทำงาน</h2>
+<p>ทุกงานมีบันทึกละเอียดทุกขั้นตอน อ่านได้สดระหว่างทำ:</p>
+<ul>
+  <li>คำสั่งที่ส่งให้ AI และคำตอบที่ได้</li>
+  <li>การทำภาพและคลิปแต่ละฉาก</li>
+  <li>สิ่งที่ส่วนขยายทำใน Chrome</li>
+  <li>คำสั่ง FFmpeg</li>
+  <li>การแก้ของคุณใน storyboard</li>
+</ul>
+<ul>
+  <li><b>ค้นหา</b> — ข้อความ prompt หรือ error</li>
+  <li><b>กรองฉาก</b> — ทุกฉาก / ทั้งงาน / ฉาก N</li>
+  <li><b>กรองระดับ</b> และ <b>ขั้นตอน</b> — ระบบ, วางบท, storyboard, เสียงพากย์, ภาพ, วิดีโอ, ถอดเสียง, เรนเดอร์, โพสต์</li>
+  <li><b>เวลาต่อขั้นตอน</b> — แถบแสดงว่าแต่ละขั้นใช้เวลาเท่าไร</li>
+  <li><b>เลื่อนตามอัตโนมัติ</b> — ขณะงานกำลังทำ (มีป้าย “กำลังบันทึกสด”)</li>
+  <li><span class="ui">คัดลอกทั้งหมด</span> / <span class="ui">ส่งออก</span> — เป็นไฟล์ .txt หรือ .jsonl ส่งให้ผู้ช่วยดูเมื่อต้องการความช่วยเหลือ</li>
+</ul>
+<p>ไฟล์บันทึกยังอยู่ในโฟลเดอร์ของงานเป็น <code>log.jsonl</code></p>
+<p>ถ้ามีงานกำลังทำอยู่ตอนกดปิดแอป แอปจะถามก่อน (“กำลังทำอยู่ N งาน — ปิดแอปเลยไหม?”) ถ้าปิด งานจะเริ่มขั้นตอนนั้นใหม่เมื่อเปิดแอปครั้งถัดไป</p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="storyboard.html"><small>← ก่อนหน้า</small>ตรวจฉาก (storyboard)</a><a class="next" href="library.html"><small>ถัดไป →</small>ผลงาน</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

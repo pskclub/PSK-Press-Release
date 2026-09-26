@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>พื้นฐานหน้าสร้างงาน · คู่มือ PSK Press</title>
+<meta name="description" content="ทุกหน้าในกลุ่ม “สร้าง” ใช้โครงเดียวกัน — ฟอร์มด้านซ้าย การ์ดพร้อมสร้างด้านขวา พรีเซ็ต และการตกแต่งด้านล่าง เข้าใจหน้านี้แล้วใช้ได้ทุกหน้า">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html" aria-current="page">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">สร้างงาน</p>
+<h1>พื้นฐานหน้าสร้างงาน</h1>
+<p class="lead">ทุกหน้าในกลุ่ม “สร้าง” ใช้โครงเดียวกัน — ฟอร์มด้านซ้าย การ์ดพร้อมสร้างด้านขวา พรีเซ็ต และการตกแต่งด้านล่าง เข้าใจหน้านี้แล้วใช้ได้ทุกหน้า</p>
+<figure><a class="shot tall" href="img/story.png"><img src="img/story.png" alt="หน้าสร้างงาน (ตัวอย่าง: เรื่องเล่า AI) — ฟอร์มด้านซ้าย การ์ด “พร้อมสร้าง” ด้านขวา" loading="lazy" width="1440"></a><figcaption>หน้าสร้างงาน (ตัวอย่าง: เรื่องเล่า AI) — ฟอร์มด้านซ้าย การ์ด “พร้อมสร้าง” ด้านขวา</figcaption></figure>
+
+<h2 id="h-1">ส่วนต่าง ๆ ของหน้า</h2>
+<ul>
+  <li><b>หัวหน้า</b> — ชื่อหน้า คำอธิบาย และแถบพรีเซ็ตมุมขวาบน</li>
+  <li><b>ฟอร์ม</b> — แผงตั้งค่าเรียงจากบนลงล่าง แต่ละหน้าต่างกันตามชนิดงาน</li>
+  <li><b>การตกแต่งและส่งออก</b> — แผงล่างสุดที่ทุกหน้าวิดีโอใช้ร่วมกัน (ขนาดวิดีโอ เสียง ซับ ฮุค เพลง แคปชัน) ดู <a href="finish.html">การตกแต่งและส่งออก</a></li>
+  <li><b>การ์ดพร้อมสร้าง</b> — ด้านขวา บอกจำนวนงานที่จะได้ ประมาณเวลา และสิ่งที่ยังขาด</li>
+</ul>
+<div class="note tip"><span class="t">ฟอร์มจำค่าไว้ให้</span>
+ทุกช่องที่กรอกจะถูกเก็บเป็นฉบับร่างของหน้านั้นอัตโนมัติ ออกไปหน้าอื่นแล้วกลับมาก็ยังอยู่ ปุ่ม ↺ <span class="ui">ล้างฟอร์มกลับค่าเริ่มต้น</span> มุมขวาบนจะล้างทุกช่องกลับเป็นค่าเริ่มต้น (มีถามยืนยัน)</div>
+
+<h2 id="h-2">ทำหลายคลิปในครั้งเดียว</h2>
+<p>ทุกหน้าสร้างงานรองรับการทำเป็นชุด:</p>
+<ul>
+  <li><b>เรื่องเล่า / พอดแคสต์</b> — ใส่หัวข้อหลายบรรทัด บรรทัดละ 1 งาน</li>
+  <li><b>คลิปขายสินค้า</b> — เลือกหลายสินค้า สินค้าละ 1 คลิป และเลือก “สลับหลายแบบ” ให้แต่ละคลิปใช้โครงเรื่องไม่ซ้ำกันได้</li>
+  <li><b>ข่าว</b> — เลือกหลายข่าวจาก RSS หรือวางหลายลิงก์ ลิงก์ละ 1 คลิป</li>
+  <li><b>รีมิกซ์</b> — ตั้ง “จำนวนเวอร์ชันที่จะสร้าง” ได้ถึง 20</li>
+</ul>
+<p>การ์ดพร้อมสร้างจะแสดงจำนวนงาน รายชื่อ 8 งานแรก และบรรทัดประมาณการ เช่น <i>ประมาณ 8 ฉาก · คลิป AI 2 คลิป (ใช้เครดิต Flow) · ใช้เวลาราว …</i></p>
+
+<h2 id="h-3">สร้างเลย หรือ เก็บเข้าคิวไว้ก่อน</h2>
+<ul>
+  <li><span class="ui">สร้างเลย</span> — ใส่งานเข้าคิวแล้วเริ่มผลิตทันที กดได้เมื่อตั้งค่าครบ</li>
+  <li><span class="ui">เก็บเข้าคิวไว้ก่อน</span> — ใส่งานเข้าคิวโดยยังไม่เริ่ม เหมาะกับการเตรียมงานไว้หลายชุด หรือตอนที่ยังตั้งค่าไม่ครบ ไปกดเริ่มทีหลังได้ที่ <a href="queue.html">คิวงาน</a></li>
+</ul>
+<p>หลังกด จะขึ้นข้อความ “เริ่มสร้าง N งานแล้ว” พร้อมปุ่ม <span class="ui">ดูคิว</span> งานจะผลิตอยู่เบื้องหลัง ปิดหน้านี้ได้</p>
+<p>แอปถามยืนยันก่อนใน 2 กรณี:</p>
+<ul>
+  <li><b>งานนี้จะโพสต์เองเมื่อเสร็จ</b> — ถ้าเปิดโพสต์อัตโนมัติไว้ หน้ายืนยันจะสรุปแพลตฟอร์ม การมองเห็น และระยะห่างระหว่างโพสต์</li>
+  <li><b>สร้างคลิป AI ประมาณ N คลิป?</b> — ถ้าชุดนั้นจะใช้คลิป AI มากกว่า 20 คลิป แนะนำเปิด “ตรวจฉาก (storyboard) ก่อนสร้าง” เพื่อไม่เสียเครดิตกับบทที่ยังไม่พอใจ</li>
+</ul>
+
+<h2 id="h-4">พรีเซ็ต</h2>
+<p>บันทึกชุดค่าที่ใช้บ่อย เช่น “คลิปร้านเสื้อผ้า โทนพรีเมียม” แล้วเรียกกลับมาใช้ได้ในคลิกเดียว:</p>
+<ul>
+  <li><b>บันทึก</b> — ตั้งค่าฟอร์มให้เรียบร้อย กด <span class="ui">บันทึก</span> ข้างช่องพรีเซ็ต แล้วตั้ง <b>ชื่อพรีเซ็ต</b> ใช้ชื่อเดิมเพื่อบันทึกทับ</li>
+  <li><b>ใช้</b> — เลือกจากช่อง <span class="ui">เลือกพรีเซ็ต…</span> ค่าทั้งหมดจะถูกโหลดเข้าฟอร์ม</li>
+  <li><b>ลบ</b> — เลือกพรีเซ็ตแล้วกดไอคอนถังขยะ <span class="ui">ลบพรีเซ็ต</span> (ฟอร์มตอนนี้ไม่เปลี่ยน)</li>
+</ul>
+<p>พรีเซ็ตแยกตามหน้า พรีเซ็ตของคลิปขายสินค้าจะเห็นเฉพาะในหน้าคลิปขายสินค้า</p>
+
+<h2 id="h-5">ตัวช่วยที่มีในหลายหน้า</h2>
+<ul>
+  <li><span class="ui">ขอไอเดีย</span> — ให้ AI เสนอหัวข้อ 6 ข้อ ต่อท้ายในช่องหัวข้อ</li>
+  <li>ชิป <span class="ui">กำหนดเอง</span> — ในตัวเลือกแบบชิป (แนวเรื่อง สไตล์ภาพ อารมณ์) กดเพื่อพิมพ์ค่าของคุณเอง</li>
+  <li><b>คำสั่งเพิ่มเติมถึง AI</b> — ช่องท้ายฟอร์ม ใส่ข้อกำหนดพิเศษ เช่น “เน้นจุดเด่นเรื่องพกพาง่าย ถ่ายในคอนโดเล็ก”</li>
+  <li><b>ตรวจฉาก (storyboard) ก่อนสร้างจริง</b> — ให้ AI วางบทและทำภาพตัวอย่างทุกฉากก่อน แล้วหยุดรอคุณแก้และอนุมัติ ก่อนสร้างเสียงและวิดีโอ ดู <a href="storyboard.html">ตรวจฉาก</a></li>
+</ul>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="quickstart.html"><small>← ก่อนหน้า</small>คลิปแรกใน 10 นาที</a><a class="next" href="finish.html"><small>ถัดไป →</small>การตกแต่งและส่งออก</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>พอดแคสต์ · คู่มือ PSK Press</title>
+<meta name="description" content="โฮสต์ 1–2 คนคุยกันตามหัวข้อ เสียงแยกคนชัดเจน ภาพตัดไปหาคนที่กำลังพูดสลับกับมุมกว้าง">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html" aria-current="page">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">สร้างงาน</p>
+<h1>พอดแคสต์</h1>
+<p class="lead">โฮสต์ 1–2 คนคุยกันตามหัวข้อ เสียงแยกคนชัดเจน ภาพตัดไปหาคนที่กำลังพูดสลับกับมุมกว้าง</p>
+<figure><a class="shot tall" href="img/podcast.png"><img src="img/podcast.png" alt="หน้า พอดแคสต์" loading="lazy" width="1440"></a><figcaption>หน้า <b>พอดแคสต์</b></figcaption></figure>
+
+<h2 id="h-1">1. เนื้อหา</h2>
+<h3 id="h-2">ให้ AI เขียน</h3>
+<ul>
+  <li><b>หัวข้อตอน</b> — บรรทัดละ 1 ตอน มีปุ่ม <span class="ui">ขอไอเดีย</span></li>
+  <li><b>รูปแบบรายการ</b> — ให้ความรู้, คอมเมดี้, เรื่องผี, ดีเบต, รีวิว, ข่าวเด่น, เทคโนโลยี, พัฒนาตัวเอง</li>
+  <li><b>น้ำเสียง</b> — พิมพ์เอง (ค่าเริ่มต้น “เป็นกันเอง สนุก”)</li>
+  <li><b>ภาษา</b> และ <b>ความยาว</b> (20 วินาที – 5 นาที ค่าเริ่มต้น 1 นาที)</li>
+</ul>
+<h3 id="h-3">ใช้บทของฉัน</h3>
+<p>ใส่ <b>ชื่อตอน</b> และ <b>บทสนทนา</b> ขึ้นต้นแต่ละบรรทัดด้วย <code>A:</code> / <code>B:</code> หรือชื่อโฮสต์ เช่น</p>
+<pre><code>ต้น: วันนี้เรามาคุยเรื่องการออมเงินกัน
+มิว: เรื่องนี้ฉันพลาดมาเยอะเลยนะ</code></pre>
+<p>บรรทัดที่ไม่มีชื่อนำหน้าจะต่อเป็นคำพูดของคนก่อนหน้า</p>
+
+<h2 id="h-4">2. โฮสต์</h2>
+<p>ค่าเริ่มต้นมี 2 คน คือ “ต้น” และ “มิว” กด <span class="ui">เพิ่มโฮสต์</span> ได้สูงสุด 2 คน แต่ละคนตั้ง:</p>
+<ul>
+  <li><b>ชื่อ</b> — หรือกด <span class="ui">เลือกจากตัวละคร</span> เพื่อดึงชื่อ รูป คำอธิบาย และเสียงจากคลังตัวละคร</li>
+  <li><b>รูปโฮสต์</b> — ถ้าไม่มีรูป AI จะวาดจากคำอธิบาย</li>
+  <li><b>หน้าตา (ภาษาอังกฤษได้ผลดีสุด)</b> — เช่น <i>Thai woman in her late 20s, shoulder-length hair, beige blouse</i></li>
+  <li><b>เสียง</b> — เลือกเสียงให้ต่างกัน ถ้าซ้ำกัน แอปจะเตือนว่าคนฟังจะแยกไม่ออก</li>
+</ul>
+<p>ผู้ให้บริการเสียงของโฮสต์ใช้ค่าจากส่วน <b>เสียง (ผู้ให้บริการ/ความเร็ว)</b> ในการตกแต่งด้านล่าง</p>
+
+<h2 id="h-5">3. ฉากและภาพ</h2>
+<ul>
+  <li><b>ฉาก</b> — สตูดิโอพอดแคสต์, มุมคาเฟ่, ห้องนั่งเล่น, ห้องข่าว, สตูดิโอนีออน, สตูดิโอขาวมินิมอล</li>
+  <li><b>สไตล์ภาพ</b></li>
+  <li><b>สปอนเซอร์ (ไม่บังคับ)</b> → <span class="ui">เลือกสินค้า</span> — โฮสต์พูดถึงสินค้าตอนท้าย</li>
+  <li><b>คำสั่งเพิ่มเติมถึง AI</b></li>
+</ul>
+<p>ภาพที่ได้คือรูปพิธีกรแต่ละคน ภาพจะตัดไปหาคนที่กำลังพูด สลับกับภาพมุมกว้างที่มีทุกคน</p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="news.html"><small>← ก่อนหน้า</small>ข่าว</a><a class="next" href="remix.html"><small>ถัดไป →</small>รีมิกซ์ &amp; ขัดเกลา</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

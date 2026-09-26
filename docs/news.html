@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ข่าว · คู่มือ PSK Press</title>
+<meta name="description" content="ดึงหัวข้อข่าวจาก RSS หรือวางลิงก์/เนื้อข่าว แล้วได้คลิปสรุปข่าวพร้อมภาพประกอบ เสียงผู้ประกาศ และพาดหัวค้างบนจอ">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html" aria-current="page">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">สร้างงาน</p>
+<h1>ข่าว</h1>
+<p class="lead">ดึงหัวข้อข่าวจาก RSS หรือวางลิงก์/เนื้อข่าว แล้วได้คลิปสรุปข่าวพร้อมภาพประกอบ เสียงผู้ประกาศ และพาดหัวค้างบนจอ</p>
+<figure><a class="shot tall" href="img/news.png"><img src="img/news.png" alt="หน้า ข่าว" loading="lazy" width="1440"></a><figcaption>หน้า <b>ข่าว</b></figcaption></figure>
+
+<h2 id="h-1">1. แหล่งข่าว</h2>
+<h3 id="h-2">จาก RSS (ค่าเริ่มต้น)</h3>
+<ol class="steps">
+  <li>วางลิงก์ RSS/Atom ของสำนักข่าวในช่อง แล้วกด <span class="ui">เพิ่มฟีด</span> เพิ่มได้หลายฟีด และลบฟีดได้ที่ปุ่มบนชิปของฟีด</li>
+  <li>กด <span class="ui">โหลดข่าวล่าสุด</span> แอปจะแสดงหัวข้อข่าวล่าสุดจากทุกฟีด</li>
+  <li>ติ๊กข่าวที่ต้องการ ข่าวละ 1 คลิป บรรทัด “เลือกแล้ว N ข่าว” มีปุ่ม <span class="ui">ล้าง</span></li>
+</ol>
+<h3 id="h-3">ลิงก์ / ข้อความ</h3>
+<ul>
+  <li><b>ลิงก์ข่าว</b> — วางได้หลายลิงก์ คั่นด้วยบรรทัดใหม่ ลิงก์ละ 1 คลิป แอปดึงเฉพาะเนื้อข่าวจากหน้าเว็บ ถ้าดึงไม่ได้จะใช้สรุปจากฟีดแทน</li>
+  <li><b>หรือวางเนื้อข่าวเอง</b> — ใส่พาดหัวข่าวและเนื้อหาข่าว</li>
+</ul>
+
+<h2 id="h-4">2. รูปแบบการเล่าข่าว</h2>
+<ul>
+  <li><b>สไตล์</b> — ผู้ประกาศข่าว (ค่าเริ่มต้น), เล่าข่าวเป็นกันเอง, สรุปเป็นข้อ</li>
+  <li><b>ความยาว</b> (ค่าเริ่มต้น 45 วิ) และ <b>ภาษา</b></li>
+  <li><b>ประโยคปิดท้าย</b> — เช่น “ติดตามข่าวสารได้ทุกวัน”</li>
+  <li><b>สไตล์ภาพประกอบ</b> — ภาพประกอบข่าว, อินโฟกราฟิก, ภาพประกอบสีน้ำ, 3D มินิมอล</li>
+  <li><b>ตรวจฉาก (storyboard) ก่อนสร้างจริง</b></li>
+</ul>
+<div class="note info"><span class="t">ข่าวต้องถูกต้อง</span>
+AI ได้รับคำสั่งให้ใช้เฉพาะข้อเท็จจริงในบทความ ห้ามแต่งตัวเลข ชื่อ หรือคำพูดขึ้นเอง ภาพเป็นภาพประกอบ ไม่ใช่ภาพเหตุการณ์จริง และไม่วาดหน้าบุคคลจริง แต่ AI ยังผิดพลาดได้ ควรเปิดตรวจฉากแล้วอ่านบทก่อนเผยแพร่ทุกครั้ง แก้ข้อความสั่งได้ที่ <a href="prompts.html">พรอมต์ระบบ</a> → “บทบาท AI: ข่าว”</div>
+<p>หน้านี้เปิด <b>พาดหัวค้างด้านบน</b> ไว้เป็นค่าเริ่มต้นในส่วนการตกแต่ง ดู <a href="finish.html">การตกแต่งและส่งออก</a></p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="story.html"><small>← ก่อนหน้า</small>เรื่องเล่า AI</a><a class="next" href="podcast.html"><small>ถัดไป →</small>พอดแคสต์</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

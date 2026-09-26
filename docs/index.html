@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คู่มือการใช้งาน PSK Press · คู่มือ PSK Press</title>
+<meta name="description" content="สตูดิโอทำคอนเทนต์บนเดสก์ท็อป — เขียนบท วาดภาพ ทำคลิป AI พากย์เสียง ใส่ซับ ตัดต่อ และโพสต์ ได้ในแอปเดียว คู่มือนี้พาใช้ทุกหน้าทีละขั้น">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html" aria-current="page">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+
+<h1>คู่มือการใช้งาน PSK Press</h1>
+<p class="lead">สตูดิโอทำคอนเทนต์บนเดสก์ท็อป — เขียนบท วาดภาพ ทำคลิป AI พากย์เสียง ใส่ซับ ตัดต่อ และโพสต์ ได้ในแอปเดียว คู่มือนี้พาใช้ทุกหน้าทีละขั้น</p>
+<div class="hero">
+  <p style="margin:0 0 6px"><b>PSK Press ทำอะไรได้บ้าง</b></p>
+  <p style="margin:0">พิมพ์หัวข้อหรือเลือกสินค้า แล้วแอปจะทำให้ครบวงจร:</p>
+  <ul style="margin:6px 0 0">
+    <li>ให้ AI วางบท วาดภาพหรือทำคลิปวิดีโอทีละฉาก</li>
+    <li>พากย์เสียง ใส่ซับเคลื่อนไหว ฮุค พาดหัว และเพลง</li>
+    <li>ประกอบเป็นไฟล์วิดีโอพร้อมแคปชัน</li>
+    <li>ส่งขึ้น TikTok / YouTube / Facebook ผ่านเบราว์เซอร์ที่คุณล็อกอินไว้</li>
+  </ul>
+  <p style="margin:10px 0 0">ทุกอย่างทำงานบนเครื่องของคุณ ใช้คีย์ AI หรือบัญชีเว็บของคุณเอง ไม่มีเซิร์ฟเวอร์ตัวกลาง</p>
+  <div class="actions">
+    <a class="btn primary" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ ดาวน์โหลดตัวติดตั้ง Windows</a>
+    <a class="btn" href="quickstart.html">เริ่มคลิปแรกใน 10 นาที →</a>
+  </div>
+</div>
+
+<figure><a class="shot" href="img/home.png"><img src="img/home.png" alt="หน้า ภาพรวม — สถิติ งานที่ต้องจัดการ งานที่กำลังผลิต และทางลัดไปทุกหน้าสร้างงาน" loading="lazy" width="1440"></a><figcaption>หน้า <b>ภาพรวม</b> — สถิติ งานที่ต้องจัดการ งานที่กำลังผลิต และทางลัดไปทุกหน้าสร้างงาน</figcaption></figure>
+
+<h2 id="h-1">เริ่มจากตรงนี้</h2>
+<p>ถ้าเพิ่งติดตั้งครั้งแรก ทำตามลำดับนี้:</p>
+<ol class="steps">
+  <li><a href="install.html"><b>ติดตั้งแอป</b></a> — ดาวน์โหลดไฟล์ <code>-setup.exe</code> แล้วติดตั้ง แอปจะอัปเดตตัวเองหลังจากนั้น</li>
+  <li><a href="connect.html"><b>เชื่อมเบราว์เซอร์ Chrome</b></a> — ติดตั้งส่วนขยาย <b>PSK Press Bridge</b> แล้วล็อกอิน Gemini, Google Flow และบัญชีโซเชียลใน Chrome</li>
+  <li><a href="setup.html"><b>ตั้งค่าครั้งแรก</b></a> — เลือกว่าจะให้ AI ตัวไหนเขียนบท วาดภาพ พากย์เสียง และทำคลิป (ใช้ผ่านเว็บโดยไม่ต้องมีคีย์ก็ได้)</li>
+  <li><a href="quickstart.html"><b>ทำคลิปแรก</b></a> — ลองทำคลิปขายสินค้า 15 วินาทีตั้งแต่ต้นจนโพสต์</li>
+</ol>
+
+<h2 id="h-2">หน้าในแอป</h2>
+<p>เมนูด้านซ้ายของแอปแบ่งเป็น 4 กลุ่ม แต่ละหน้ามีคู่มือของตัวเอง:</p>
+
+<h3 id="h-3">สร้าง</h3>
+<div class="cards">
+  <a class="card" href="product.html"><b>คลิปขายสินค้า</b><span>สินค้า → คลิปรีวิว/ขาย ที่หน้าตาสินค้าตรงรูปจริง ทำแบบแผ่นสตอรี่บอร์ดได้</span></a>
+  <a class="card" href="story.html"><b>เรื่องเล่า AI</b><span>หัวข้อเดียว → เรื่องสั้นหรือยาว พร้อมภาพ เสียง ซับ</span></a>
+  <a class="card" href="news.html"><b>ข่าว</b><span>ลิงก์ RSS หรือเนื้อข่าว → คลิปสรุปข่าว</span></a>
+  <a class="card" href="podcast.html"><b>พอดแคสต์</b><span>โฮสต์ 1–2 คนคุยกัน พร้อมเสียงแยกคน</span></a>
+  <a class="card" href="remix.html"><b>รีมิกซ์ &amp; ขัดเกลา</b><span>ตัดฟุตเทจใหม่ใต้เสียงพากย์ หรือเก็บงานคลิปพูด</span></a>
+  <a class="card" href="imageset.html"><b>ชุดภาพสินค้า</b><span>ภาพโฆษณาหลายแบบในโทนเดียว</span></a>
+  <a class="card" href="editor.html"><b>ตัดต่อเอง</b><span>เลือกคลิป เสียง ซับ แล้วเรนเดอร์เอง</span></a>
+</div>
+
+<h3 id="h-4">งาน</h3>
+<div class="cards">
+  <a class="card" href="queue.html"><b>คิวงาน</b><span>งานที่กำลังผลิตและรอคิว ดูบันทึกทุกขั้นตอน</span></a>
+  <a class="card" href="storyboard.html"><b>ตรวจฉาก (storyboard)</b><span>แก้บทและภาพทุกฉากก่อนใช้เครดิตทำคลิปจริง</span></a>
+  <a class="card" href="library.html"><b>ผลงาน</b><span>วิดีโอและภาพที่สร้างเสร็จ</span></a>
+  <a class="card" href="publish.html"><b>โพสต์</b><span>โพสต์และตั้งเวลาลง TikTok / YouTube / Facebook</span></a>
+</div>
+
+<h3 id="h-5">คลัง</h3>
+<div class="cards">
+  <a class="card" href="products.html"><b>สินค้า</b><span>ฐานข้อมูลสินค้า ลิงก์ และรูป</span></a>
+  <a class="card" href="characters.html"><b>ตัวละคร</b><span>คนหรือมาสคอตที่หน้าตาเหมือนเดิมทุกคลิป</span></a>
+  <a class="card" href="audio.html"><b>เสียง &amp; เพลง</b><span>เสียงพากย์ เพลงประกอบ และเอฟเฟกต์</span></a>
+</div>
+
+<h3 id="h-6">ระบบ</h3>
+<div class="cards">
+  <a class="card" href="connect.html"><b>เชื่อมต่อ</b><span>ส่วนขยายเบราว์เซอร์ บัญชีโซเชียล และการแจ้งเตือน</span></a>
+  <a class="card" href="settings.html"><b>ตั้งค่า</b><span>คีย์ AI โมเดล การเรนเดอร์ และโฟลเดอร์</span></a>
+  <a class="card" href="prompts.html"><b>พรอมต์ระบบ</b><span>แก้คำสั่งทุกข้อที่แอปส่งให้ AI</span></a>
+  <a class="card" href="troubleshooting.html"><b>แก้ปัญหา</b><span>ข้อความผิดพลาดที่เจอบ่อยและวิธีแก้</span></a>
+</div>
+
+<h2 id="h-7">ภาพรวมการทำงาน</h2>
+<p>ทุกงานวิดีโอผ่านขั้นตอนเดียวกัน ทุกขั้นดูได้สดในบันทึกของงาน (<a href="queue.html">คิวงาน</a> → <span class="ui">ดูบันทึก</span>):</p>
+<div class="table"><table>
+<tr><th>ขั้น</th><th>เกิดอะไรขึ้น</th><th>ใช้อะไร</th></tr>
+<tr><td>1. วางบท</td><td>AI เขียนบทพากย์ คำบรรยายภาพ และการเคลื่อนกล้องทีละฉาก พร้อมชื่อเรื่อง ฮุค และแคปชัน</td><td>Gemini / ChatGPT (ผ่านเว็บหรือ API)</td></tr>
+<tr><td>2. ตรวจฉาก</td><td>ถ้าเปิด “ตรวจฉาก” งานจะหยุดให้คุณแก้บทและภาพก่อน</td><td>คุณ</td></tr>
+<tr><td>3. ภาพ / คลิป</td><td>วาดภาพนิ่งทีละฉาก หรือทำคลิปวิดีโอ AI (Google Flow / Veo)</td><td>Gemini / ChatGPT / Flow</td></tr>
+<tr><td>4. เสียง</td><td>พากย์เสียง AI หรือให้คนในคลิปพูดเอง</td><td>ElevenLabs / Gemini / OpenAI</td></tr>
+<tr><td>5. เรนเดอร์</td><td>ต่อฉาก ใส่ซับ ฮุค พาดหัว เพลง ลายน้ำ แล้วเข้ารหัสเป็น MP4</td><td>FFmpeg (มากับแอป)</td></tr>
+<tr><td>6. โพสต์</td><td>ส่งขึ้นแพลตฟอร์มทันที ตั้งเวลา หรือเตรียมไว้ให้คุณกดเอง</td><td>ส่วนขยายใน Chrome</td></tr>
+</table></div>
+
+<div class="note info"><span class="t">คู่มือนี้อ้างชื่อปุ่มตามแอปจริง</span>
+ข้อความในกรอบแบบนี้ เช่น <span class="ui">สร้างเลย</span> คือปุ่มหรือช่องที่มีชื่อตรงตามในแอป ภาพหน้าจอในคู่มือใช้ข้อมูลตัวอย่าง</div>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><span></span><a class="next" href="install.html"><small>ถัดไป →</small>ติดตั้งและอัปเดต</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
