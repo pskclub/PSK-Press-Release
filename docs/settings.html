@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ตั้งค่าทั้งหมด · คู่มือ PSK Press</title>
-<meta name="description" content="ทุกส่วนในหน้าตั้งค่า — คีย์ API โมเดล AI พรอมต์ระบบ ซับไตเติลเริ่มต้น การเรนเดอร์ โฟลเดอร์และเครื่องมือ คิวและการโพสต์ หน้าตาแอป และเกี่ยวกับ">
+<meta name="description" content="ทุกส่วนในหน้าตั้งค่า — คีย์ API โมเดล AI พรอมต์ระบบ ซับไตเติลเริ่มต้น การเรนเดอร์ โฟลเดอร์และเครื่องมือ คิวและการโพสต์ หน้าตาแอป ค่าใช้จ่าย แก้แบบ JSON และเกี่ยวกับ">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,10 +52,13 @@
 <a href="products.html">สินค้า</a>
 <a href="characters.html">ตัวละคร</a>
 <a href="audio.html">เสียง &amp; เพลง</a>
+<a href="brands.html">ชุดแบรนด์</a>
+<a href="community.html">คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า</a>
 <h4>ระบบ</h4>
 <a href="settings.html" aria-current="page">ตั้งค่าทั้งหมด</a>
 <a href="prompts.html">พรอมต์ระบบ</a>
 <a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="report.html">แจ้งปัญหาให้ผู้พัฒนา</a>
 <a href="faq.html">คำถามที่พบบ่อย</a>
 <a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
 </nav>
@@ -63,7 +66,7 @@
 <article class="doc">
 <p class="eyebrow">ระบบ</p>
 <h1>ตั้งค่าทั้งหมด</h1>
-<p class="lead">ทุกส่วนในหน้าตั้งค่า — คีย์ API โมเดล AI พรอมต์ระบบ ซับไตเติลเริ่มต้น การเรนเดอร์ โฟลเดอร์และเครื่องมือ คิวและการโพสต์ หน้าตาแอป และเกี่ยวกับ</p>
+<p class="lead">ทุกส่วนในหน้าตั้งค่า — คีย์ API โมเดล AI พรอมต์ระบบ ซับไตเติลเริ่มต้น การเรนเดอร์ โฟลเดอร์และเครื่องมือ คิวและการโพสต์ หน้าตาแอป ค่าใช้จ่าย แก้แบบ JSON และเกี่ยวกับ</p>
 <p>ค่าในหน้านี้เป็นค่าเริ่มต้นของทุกงาน แต่ละหน้าสร้างงานปรับทับได้อีกที</p>
 <ul>
   <li>แก้แล้วกด <span class="ui">บันทึก</span> มุมขวาบน</li>
@@ -151,7 +154,21 @@
   <li><b>ย่อแถบเมนูด้านซ้าย</b></li>
 </ul>
 
-<h2 id="h-13">เกี่ยวกับ</h2>
+<h2 id="h-13">ค่าใช้จ่าย</h2>
+<p>แอปบันทึกว่าแต่ละงานใช้บริการ AI ไปเท่าไร (โทเคน ภาพ ตัวอักษรที่พากย์ วินาทีที่ถอดเสียง คลิป) แล้วคิดเป็นเงินจากตารางราคาในหน้านี้</p>
+<ul>
+  <li><b>อัตราแลกเปลี่ยน</b> — บาทต่อ 1 ดอลลาร์ ใช้แสดงค่าใช้จ่ายเป็นบาท</li>
+  <li>ราคาต่อหน่วยแยกตามงาน: เขียนบท (ต่อ 1 ล้านโทเคน ส่งเข้า/ตอบกลับ) สร้างภาพ (ต่อภาพ) เสียงพากย์ (ต่อ 1,000 ตัวอักษร) ถอดเสียง (ต่อนาที) คลิปวิดีโอ (ต่อวินาที) · “โมเดลอื่น” ใช้กับโมเดลที่ไม่อยู่ในรายการ</li>
+  <li>ราคาที่แก้เองมีป้าย <b>แก้เอง</b> กด <span class="ui">ค่าในแอป</span> เพื่อกลับไปใช้ราคาในแอป</li>
+</ul>
+<figure><a class="shot tall" href="img/settings-costs.png"><img src="img/settings-costs.png" alt="ตั้งค่า → ค่าใช้จ่าย" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → ค่าใช้จ่าย</figcaption></figure>
+<div class="note warn"><span class="t">ราคาเป็นค่าประมาณ</span>ราคาจริงขึ้นกับแพ็กเกจและโควตาฟรีของบัญชีคุณ ตรวจกับหน้าราคาของผู้ให้บริการ · บริการผ่านเว็บ Google Flow และ Ollama ไม่คิดเป็นเงินต่อครั้ง แต่ใช้โควตา เครดิต หรือเครื่องของคุณ</div>
+
+<h2 id="h-14">แก้แบบ JSON</h2>
+<p>การตั้งค่าทั้งหมดและพรีเซ็ตทุกหน้าในรูป JSON แยกเป็นส่วน มีคำอธิบายทุกค่า ส่งออกให้เครื่องอื่นและนำเข้าได้ ดู <a href="community.html">คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า</a></p>
+
+<h2 id="h-15">เกี่ยวกับ</h2>
+<p>ปุ่ม <span class="ui">เปิดตัวช่วยตั้งค่าอีกครั้ง</span> เปิดตัวช่วยตั้งค่าครั้งแรก · แผง <b>แจ้งปัญหาและบันทึกการทำงาน (log)</b> มี <span class="ui">แจ้งปัญหา…</span> <span class="ui">คัดลอกข้อมูลแจ้งปัญหา</span> และ <span class="ui">เปิดโฟลเดอร์บันทึก (log)</span> ดู <a href="report.html">แจ้งปัญหาให้ผู้พัฒนา</a></p>
 <p>แสดงเวอร์ชัน ปุ่ม <span class="ui">ตรวจหาอัปเดต</span> สัญญาอนุญาตของส่วนประกอบที่มากับแอป:</p>
 <ul>
   <li>FFmpeg (GPLv3)</li>
@@ -160,7 +177,7 @@
 </ul>
 <p>และข้อความความรับผิดชอบต่อเนื้อหา ดู <a href="install.html">ติดตั้งและอัปเดต</a></p>
 
-<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="audio.html"><small>← ก่อนหน้า</small>เสียง &amp; เพลง</a><a class="next" href="prompts.html"><small>ถัดไป →</small>พรอมต์ระบบ</a></nav>
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="community.html"><small>← ก่อนหน้า</small>คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า</a><a class="next" href="prompts.html"><small>ถัดไป →</small>พรอมต์ระบบ</a></nav>
 <footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
 </article>
 </main>

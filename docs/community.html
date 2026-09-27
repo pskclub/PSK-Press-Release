@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า · คู่มือ PSK Press</title>
+<meta name="description" content="นำเข้าพรีเซ็ตและสไตล์ที่คนอื่นแบ่งปันในคลิกเดียว ส่งออกการตั้งค่าของคุณให้เครื่องอื่นหรือเพื่อนร่วมทีม และแก้การตั้งค่าทั้งหมดแบบ JSON">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("psk-guide-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <button class="btn icon-btn menu-btn" type="button" aria-label="เมนู" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html"><span class="logo">P.</span><span class="name">PSK Press<small>คู่มือการใช้งาน</small></span></a>
+  <span class="spacer"></span>
+  <div class="search" role="search">
+    <input type="search" placeholder="ค้นหาในคู่มือ…" aria-label="ค้นหาในคู่มือ" autocomplete="off">
+    <div class="results" role="listbox"></div>
+  </div>
+  <button class="btn icon-btn theme-btn" type="button" aria-label="สลับธีมสว่าง/มืด">◐</button>
+  <a class="btn primary dl" href="https://github.com/pskclub/PSK-Press-Release/releases/latest">⭳ <span>ดาวน์โหลด</span></a>
+</header>
+<div class="layout">
+<nav class="nav" id="nav" aria-label="สารบัญคู่มือ">
+<h4>เริ่มต้น</h4>
+<a href="index.html">หน้าแรก</a>
+<a href="install.html">ติดตั้งและอัปเดต</a>
+<a href="connect.html">เชื่อมเบราว์เซอร์และบัญชี</a>
+<a href="setup.html">ตั้งค่าครั้งแรก</a>
+<a href="quickstart.html">คลิปแรกใน 10 นาที</a>
+<h4>สร้างงาน</h4>
+<a href="create-basics.html">พื้นฐานหน้าสร้างงาน</a>
+<a href="finish.html">การตกแต่งและส่งออก</a>
+<a href="product.html">คลิปขายสินค้า</a>
+<a href="ai-clips.html">คลิป AI ด้วย Google Flow</a>
+<a href="story.html">เรื่องเล่า AI</a>
+<a href="news.html">ข่าว</a>
+<a href="podcast.html">พอดแคสต์</a>
+<a href="remix.html">รีมิกซ์ &amp; ขัดเกลา</a>
+<a href="imageset.html">ชุดภาพสินค้า</a>
+<a href="editor.html">ตัดต่อเอง</a>
+<h4>งาน</h4>
+<a href="storyboard.html">ตรวจฉาก (storyboard)</a>
+<a href="queue.html">คิวงานและบันทึก</a>
+<a href="library.html">ผลงาน</a>
+<a href="publish.html">โพสต์</a>
+<h4>คลัง</h4>
+<a href="products.html">สินค้า</a>
+<a href="characters.html">ตัวละคร</a>
+<a href="audio.html">เสียง &amp; เพลง</a>
+<a href="brands.html">ชุดแบรนด์</a>
+<a href="community.html" aria-current="page">คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า</a>
+<h4>ระบบ</h4>
+<a href="settings.html">ตั้งค่าทั้งหมด</a>
+<a href="prompts.html">พรอมต์ระบบ</a>
+<a href="troubleshooting.html">แก้ปัญหาที่พบบ่อย</a>
+<a href="report.html">แจ้งปัญหาให้ผู้พัฒนา</a>
+<a href="faq.html">คำถามที่พบบ่อย</a>
+<a href="responsible.html">ใช้อย่างรับผิดชอบ</a>
+</nav>
+<main>
+<article class="doc">
+<p class="eyebrow">คลัง</p>
+<h1>คลังพรีเซ็ตชุมชนและแชร์การตั้งค่า</h1>
+<p class="lead">นำเข้าพรีเซ็ตและสไตล์ที่คนอื่นแบ่งปันในคลิกเดียว ส่งออกการตั้งค่าของคุณให้เครื่องอื่นหรือเพื่อนร่วมทีม และแก้การตั้งค่าทั้งหมดแบบ JSON</p>
+<h2 id="h-1">คลังพรีเซ็ตชุมชน</h2>
+<p>ที่ <span class="path">คลัง → คลังพรีเซ็ตชุมชน</span> มีชุดการตั้งค่าและพรีเซ็ตที่ผู้ใช้แบ่งปันกัน เช่น สไตล์ซับไตเติล พรีเซ็ตเรื่องเล่า หรือพรีเซ็ตคลิปขายสินค้า ค้นหาด้วยชื่อ กรองด้วยแท็กหรือหน้าที่ใช้ได้</p>
+<figure><a class="shot" href="img/community.png"><img src="img/community.png" alt="คลังพรีเซ็ตชุมชน" loading="lazy" width="1440"></a><figcaption>คลังพรีเซ็ตชุมชน</figcaption></figure>
+<ol class="steps">
+  <li>กด <span class="ui">ดูรายละเอียด</span> เพื่อดูว่าชุดนี้เปลี่ยนอะไรบ้าง</li>
+  <li>กด <span class="ui">นำเข้า</span> — แอปจะพาไปหน้า <span class="path">ตั้งค่า → แก้แบบ JSON</span> พร้อมโหลดชุดนั้นมาให้ตรวจ</li>
+  <li>ดูสรุปด้านบน (<b>เข้ากับเวอร์ชันนี้</b> · จะเปลี่ยนการตั้งค่ากี่ค่า · พรีเซ็ตใหม่กี่ชุด) แล้วกด <span class="ui">นำไปใช้</span> เมื่อพอใจ — ไม่มีอะไรเปลี่ยนจนกว่าจะกดยืนยัน</li>
+</ol>
+<p>ชุดที่ต้องใช้แอปเวอร์ชันใหม่กว่าจะแสดงแต่กดนำเข้าไม่ได้ อัปเดตแอปก่อน · ถ้าเปิดหน้าไม่ได้ ตรวจอินเทอร์เน็ตแล้วกด <span class="ui">ลองใหม่</span></p>
+
+<h2 id="h-2">แก้การตั้งค่าทั้งหมดแบบ JSON</h2>
+<p>ที่ <span class="path">ตั้งค่า → แก้แบบ JSON</span> การตั้งค่าทุกอย่างและพรีเซ็ตทุกหน้าแสดงเป็นข้อความ JSON แยกเป็นส่วน ๆ (AI เขียนบท ซับไตเติล การเรนเดอร์ … และพรีเซ็ตของแต่ละหน้า) มีสีช่วยอ่าน</p>
+<figure><a class="shot tall" href="img/settings-json.png"><img src="img/settings-json.png" alt="ตั้งค่า → แก้แบบ JSON" loading="lazy" width="1440"></a><figcaption>ตั้งค่า → แก้แบบ JSON</figcaption></figure>
+<ul>
+  <li>ใต้ช่องแก้มี <b>คำอธิบายทุกค่าในส่วนนี้</b>: ชื่อ ความหมาย ค่าที่ใส่ได้ และค่าเริ่มต้น พร้อมปุ่ม <span class="ui">ใช้ค่าเริ่มต้น</span> ทีละค่า</li>
+  <li><span class="ui">ค่าเริ่มต้นของระบบ</span> ใส่ค่าเริ่มต้นของแอปทั้งส่วน · <span class="ui">คืนค่าที่ใช้อยู่</span> กลับเป็นค่าที่ใช้อยู่ตอนนี้</li>
+  <li>ส่วนพรีเซ็ตมีปุ่ม <span class="ui">เพิ่มพรีเซ็ต</span> ที่สร้างพรีเซ็ตใหม่จากฟอร์มเริ่มต้นของหน้านั้น</li>
+  <li>แอปตรวจทุกค่าก่อนใช้ ค่าที่ผิดจะขึ้นจุดแดงที่ส่วนนั้นพร้อมบอกเหตุผล และกด <span class="ui">นำไปใช้</span> ไม่ได้จนกว่าจะแก้</li>
+</ul>
+
+<h2 id="h-3">ส่งออกและนำเข้า</h2>
+<h3 id="h-4">ส่งออกให้เครื่องอื่นหรือแจกจ่าย</h3>
+<ol class="steps">
+  <li>ในหน้า <span class="path">ตั้งค่า → แก้แบบ JSON</span> กด <span class="ui">ส่งออกไฟล์…</span></li>
+  <li>เลือกเฉพาะส่วนที่จะส่งออก เช่น แค่ <b>ซับไตเติล</b> หรือแค่พรีเซ็ตหน้า <b>เรื่องเล่า AI</b></li>
+  <li>เปิด <b>ตัดค่าเฉพาะเครื่องออก</b> ไว้เมื่อจะแจกจ่าย — ตัดตำแหน่งไฟล์ โปรไฟล์ Chrome และแชต Telegram ออกให้ (คีย์ API ไม่อยู่ในไฟล์อยู่แล้ว)</li>
+  <li>ใส่ชื่อชุด ผู้สร้าง คำอธิบาย และแท็ก แล้วกด <span class="ui">บันทึกไฟล์…</span> หรือ <span class="ui">คัดลอก JSON</span> เพื่อวางในแชต</li>
+</ol>
+<h3 id="h-5">นำเข้า</h3>
+<ul>
+  <li><span class="ui">นำเข้าไฟล์…</span> — เลือกไฟล์ .json</li>
+  <li><span class="ui">นำเข้าจากลิงก์…</span> — วางลิงก์ https ของไฟล์ .json หรือลิงก์ <code>psk-press://import?url=…</code></li>
+  <li>กดลิงก์ <code>psk-press://import?url=…</code> จากเว็บหรือแชต แอปจะเปิดขึ้นมาพร้อมโหลดชุดนั้นให้ตรวจ</li>
+</ul>
+<p>หลังโหลด ด้านบนจะแสดงชื่อชุด ผู้สร้าง และที่มา พรีเซ็ตของหน้าที่ชุดนั้นมีจะรวมกับของเดิม (ชื่อซ้ำจะถูกเขียนทับ) ตรวจแล้วกด <span class="ui">นำไปใช้</span></p>
+
+<h2 id="h-6">ส่งพรีเซ็ตของคุณเข้าคลัง</h2>
+<p>ส่งออกแบบแจกจ่าย (ตัดค่าเฉพาะเครื่องออก) แล้วทำตาม <a href="https://github.com/pskclub/PSK-Press-Release/blob/main/community/CONTRIBUTING.md">วิธีส่งพรีเซ็ตเข้าคลังชุมชน</a> ห้ามมีข้อมูลส่วนตัว และใช้เฉพาะเนื้อหาที่คุณมีสิทธิ์</p>
+
+<nav class="pager" aria-label="หน้าก่อนหน้าและถัดไป"><a class="prev" href="brands.html"><small>← ก่อนหน้า</small>ชุดแบรนด์</a><a class="next" href="settings.html"><small>ถัดไป →</small>ตั้งค่าทั้งหมด</a></nav>
+<footer class="site">PSK Press · คู่มือนี้อธิบายเวอร์ชันล่าสุดในหน้า <a href="https://github.com/pskclub/PSK-Press-Release/releases/latest">ดาวน์โหลด</a> · ภาพหน้าจอใช้ข้อมูลตัวอย่าง</footer>
+</article>
+</main>
+<aside class="toc" aria-label="ในหน้านี้"></aside>
+</div>
+<div class="lightbox" role="dialog" aria-label="ภาพขยาย"><img alt=""></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
