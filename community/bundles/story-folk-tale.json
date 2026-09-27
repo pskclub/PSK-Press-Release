@@ -1,0 +1,39 @@
+{
+  "format": "psk-press-settings",
+  "version": 1,
+  "app": "0.3.0",
+  "meta": {
+    "name": "นิทานพื้นบ้านสำหรับเด็ก",
+    "description": "นิทานสั้นประมาณ 1 นาที ภาพสีน้ำอบอุ่น เล่าช้า ๆ เข้าใจง่าย พร้อมซับและเพลงประกอบแบบสุ่ม",
+    "author": "PSK Press",
+    "tags": ["เรื่องเล่า", "เด็ก"]
+  },
+  "settings": {},
+  "presets": [
+    {
+      "page": "story",
+      "name": "นิทานพื้นบ้านสำหรับเด็ก",
+      "spec": {
+        "storyType": "นิทานสำหรับเด็ก มีบทเรียนชัดเจน",
+        "visualStyle": "soft watercolor children's book illustration, warm colors",
+        "mood": "อบอุ่น ซึ้ง",
+        "audience": "เด็กประถม",
+        "lang": "th",
+        "lengthSec": 60,
+        "instructions": "ใช้ประโยคสั้น ภาษาง่าย มีบทสนทนาของตัวละคร และจบด้วยข้อคิดหนึ่งประโยค",
+        "outro": "นิทานเรื่องนี้สอนให้รู้ว่า…",
+        "finish": {
+          "subtitles": {
+            "enabled": true,
+            "font": "Mali",
+            "size": 76,
+            "animation": "highlight",
+            "highlightColor": "#ffb347"
+          },
+          "music": { "mode": "random", "path": "", "volume": 10 },
+          "motion": true
+        }
+      }
+    }
+  ]
+}

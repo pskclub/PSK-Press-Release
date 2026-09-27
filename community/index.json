@@ -1,0 +1,36 @@
+{
+  "format": "psk-press-community",
+  "version": 1,
+  "entries": [
+    {
+      "id": "subtitle-bold-pop",
+      "name": "ซับตัวหนาเด้งทีละคำ",
+      "description": "ซับตัวใหญ่ ขอบดำหนา คำที่พูดเป็นสีเหลือง เด้งขึ้นทีละคำ อ่านง่ายบนมือถือ เหมาะกับคลิปสั้นแนวตั้ง",
+      "author": "PSK Press",
+      "tags": ["ซับไตเติล", "คลิปสั้น"],
+      "contains": { "settings": ["subtitle"], "presets": [] },
+      "minAppVersion": "0.3.0",
+      "bundle": "bundles/subtitle-bold-pop.json"
+    },
+    {
+      "id": "story-folk-tale",
+      "name": "นิทานพื้นบ้านสำหรับเด็ก",
+      "description": "พรีเซ็ตเรื่องเล่า AI: นิทานสั้นประมาณ 1 นาที ภาพสีน้ำอบอุ่น เล่าช้า ๆ เข้าใจง่าย พร้อมซับและเพลงประกอบแบบสุ่ม",
+      "author": "PSK Press",
+      "tags": ["เรื่องเล่า", "เด็ก"],
+      "contains": { "settings": [], "presets": ["story"] },
+      "minAppVersion": "0.3.0",
+      "bundle": "bundles/story-folk-tale.json"
+    },
+    {
+      "id": "product-quick-review",
+      "name": "รีวิวสินค้าสั้น 15 วินาที",
+      "description": "พรีเซ็ตคลิปขายสินค้า: เปิดด้วยปัญหา ปิดด้วยชวนกดตะกร้า ตรวจฉากก่อนสร้างคลิป พร้อมซับตัวหนา",
+      "author": "PSK Press",
+      "tags": ["ขายของ", "TikTok"],
+      "contains": { "settings": [], "presets": ["product"] },
+      "minAppVersion": "0.3.0",
+      "bundle": "bundles/product-quick-review.json"
+    }
+  ]
+}

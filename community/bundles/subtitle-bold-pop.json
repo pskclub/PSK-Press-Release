@@ -1,0 +1,26 @@
+{
+  "format": "psk-press-settings",
+  "version": 1,
+  "app": "0.3.0",
+  "meta": {
+    "name": "ซับตัวหนาเด้งทีละคำ",
+    "description": "ซับตัวใหญ่ ขอบดำหนา คำที่พูดเป็นสีเหลือง เด้งขึ้นทีละคำ อ่านง่ายบนมือถือ",
+    "author": "PSK Press",
+    "tags": ["ซับไตเติล", "คลิปสั้น"]
+  },
+  "settings": {
+    "subtitle": {
+      "font": "Kanit",
+      "size": 84,
+      "color": "#ffffff",
+      "outline_color": "#000000",
+      "kind": "outline",
+      "position": 22,
+      "outline": 6,
+      "bold": true,
+      "highlight_color": "#ffd400",
+      "animation": "pop",
+      "max_chars": 18
+    }
+  }
+}

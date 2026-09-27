@@ -1,0 +1,37 @@
+{
+  "format": "psk-press-settings",
+  "version": 1,
+  "app": "0.3.0",
+  "meta": {
+    "name": "รีวิวสินค้าสั้น 15 วินาที",
+    "description": "เปิดด้วยปัญหา ปิดด้วยชวนกดตะกร้า ตรวจฉากก่อนสร้างคลิป พร้อมซับตัวหนา",
+    "author": "PSK Press",
+    "tags": ["ขายของ", "TikTok"]
+  },
+  "settings": {},
+  "presets": [
+    {
+      "page": "product",
+      "name": "รีวิวสินค้าสั้น 15 วินาที",
+      "spec": {
+        "formula": "ปัญหา → ทางออกด้วยสินค้า → ผลลัพธ์ → ชวนซื้อ",
+        "tone": "เป็นกันเอง เหมือนเพื่อนแนะนำ",
+        "lang": "th",
+        "lengthSec": 15,
+        "closingLine": "กดตะกร้าด้านล่างได้เลย",
+        "storyboard": true,
+        "finish": {
+          "subtitles": {
+            "enabled": true,
+            "font": "Kanit",
+            "size": 80,
+            "animation": "pop",
+            "kind": "outline"
+          },
+          "hook": { "mode": "auto", "lines": [], "seconds": 2, "sfx": "" },
+          "caption": true
+        }
+      }
+    }
+  ]
+}

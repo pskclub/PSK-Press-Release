@@ -1,0 +1,38 @@
+{
+  "format": "psk-press-site-recipes",
+  "version": 1,
+  "minExtensionVersion": "0.0.0",
+  "sites": {
+    "tiktok": {
+      "uploadUrl": "https://www.tiktok.com/tiktokstudio/upload",
+      "fileInput": "input[type=\"file\"][accept*=\"video\"],input[type=\"file\"]",
+      "captionEditor": ".public-DraftEditor-content,[contenteditable=\"true\"]",
+      "postButton": "button[data-e2e=\"post_video_button\"]",
+      "draftButton": "button[data-e2e=\"save_draft_button\"]"
+    },
+    "youtube": {
+      "studioUrl": "https://studio.youtube.com/",
+      "uploadDialog": "ytcp-uploads-dialog",
+      "fileInput": "input[type=\"file\"][name=\"Filedata\"],input[type=\"file\"]",
+      "titleBox": "#title-textarea #textbox",
+      "descriptionBox": "#description-textarea #textbox",
+      "doneButton": "#done-button"
+    },
+    "facebook": {
+      "reelsUrl": "https://www.facebook.com/reels/create",
+      "fileInput": "input[type=\"file\"][accept*=\"video\"],input[type=\"file\"]",
+      "addVideoLabels": [
+        "add video",
+        "เพิ่มวิดีโอ",
+        "select video",
+        "เลือกวิดีโอ",
+        "upload video",
+        "อัปโหลดวิดีโอ",
+        "select file",
+        "เลือกไฟล์",
+        "browse",
+        "add video or drag and drop"
+      ]
+    }
+  }
+}
